@@ -10,6 +10,7 @@ import DTSPage from './components/Courses/DTSPage';
 import ECCE from './components/Courses/ECCE';
 import PCTeach from './components/Courses/PCTeach';
 import ModernTech from './components/Courses/ModernTech';
+import ContactUs from './components/Contact/ContactUs';
 
 function App() {
  
@@ -27,6 +28,8 @@ function App() {
       <Route path="/courses/ecce-certificate" element={<ECCE />} />
       <Route path="/courses/personality-communication" element={<PCTeach />} />
       <Route path="/courses/modern-teaching" element={<ModernTech />} />
+
+      <Route path="/contact" element={<ContactUs />} />
 
     </Routes>
     <Footer />

@@ -24,7 +24,7 @@ const NavFoot = () => {
     { name: "About Us", href: "/about" },
     { name: "Placements", href: "#" },
     { name: "Blogs", href: "#" },
-    { name: "Contact Us", href: "#" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   // Inline SVG for Hamburger Icon

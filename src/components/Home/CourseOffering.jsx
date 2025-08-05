@@ -1,11 +1,16 @@
 import React from "react";
 import  TimelapseIcon  from '@mui/icons-material/Timelapse';
 import SellOutlinedIcon from '@mui/icons-material/SellOutlined';
+import Off1 from '../../assets/Off1.jpg';
+import Off2 from '../../assets/Off2.jpg';
+import Off3 from '../../assets/Off3.jpg';
+import Off4 from '../../assets/Off4.jpg';
+import Off5 from '../../assets/Off5.jpg';
 
 const courseCard = [
   {
     id: 1,
-    img: "/",
+    img: Off1,
     title: "Diploma in Teaching Skills",
     desc: "A comprehensive program designed to build core teaching competencies, classroom management, and curriculum planning for aspiring and current educators.",
     duration: "6 Months - 12 Months",
@@ -15,7 +20,7 @@ const courseCard = [
   },
   {
     id: 2,
-    img: "/",
+    img: Off2,
     title: "Certificate in Teaching Skills",
     desc: "A focused certification that equips teachers with essential and practical skills in lesson delivery, student engagement, and assessment methods ",
     duration: "6 Months - 12 Months",
@@ -25,7 +30,7 @@ const courseCard = [
   },
   {
     id: 3,
-    img: "/",
+    img: Off3,
     title: "Certificate in ECCE (Early Childhood Care and Education)",
     desc: "Specialized training for early childhood educators, covering developmental psychology, activity-based learning, and inclusive practices.",
     duration: "6 Months - 12 Months",
@@ -35,7 +40,7 @@ const courseCard = [
   },
   {
     id: 4,
-    img: "/",
+    img: Off4,
     title: "Personality Development and Communication Skills",
     desc: "This course enhances confidence, interpersonal skills, and public speaking—empowering educators to lead and connect effectively.",
     duration: "6 Months - 12 Months",
@@ -45,7 +50,7 @@ const courseCard = [
   },
   {
     id: 5,
-    img: "/",
+    img: Off5,
     title: "Certificate in Modern Teaching Methodologies",
     desc: "A cutting-edge course introducing educators to digital tools, learner-centered strategies, and innovative classroom techniques.",
     duration: "6 Months - 12 Months",
@@ -80,7 +85,7 @@ const CourseOffering = () => {
               <img
                 src={course.img}
                 alt={course.title}
-                className="w-full h-38 object-cover rounded"
+                className="w-full h-58 object-cover rounded"
               />
               <h2 className="text-xl font-semibold py-1">{course.title}</h2>
               <p className="text-sm text-gray-600 ">{course.desc}</p>
@@ -113,7 +118,7 @@ const CourseOffering = () => {
               <img
                 src={course.img}
                 alt={course.title}
-                className="w-full h-38 object-cover rounded"
+                className="w-full h-58 object-cover rounded"
               />
               <h2 className="text-xl font-semibold">{course.title}</h2>
               <p className="text-sm text-gray-600">{course.desc}</p>

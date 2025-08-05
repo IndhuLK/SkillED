@@ -3,6 +3,9 @@ import ForwardOutlinedIcon from '@mui/icons-material/ForwardOutlined';
 import furture from '/src/assets/furture.jpg'
 import EventOutlinedIcon from '@mui/icons-material/EventOutlined';
 import AccessTimeOutlinedIcon from '@mui/icons-material/AccessTimeOutlined';
+import Ev1 from '../../assets/Ev1.jpg';
+import Ev2 from '../../assets/Ev2.jpg';
+import Ev3 from '../../assets/Ev3.jpg';
 
 const pointsLeft = [
   {
@@ -38,7 +41,7 @@ const pointsRight = [
 const eventData = [
   {
     id: 1,
-    img: '/images/event1.jpg',
+    img: Ev1,
     title: 'Modern Classroom Strategies',
     date: 'Date: July 25, 2025',
     time: 'Time: 5:00 PM - 6:00 PM',
@@ -46,7 +49,7 @@ const eventData = [
   },
   {
     id: 2,
-    img: '/images/event2.jpg',
+    img: Ev2,
     title: 'SKIILED Orientation for New Learners',
     date: 'Date: July 28, 2025',
     time: 'Time: 10:00 AM - 12:00 PM',
@@ -54,7 +57,7 @@ const eventData = [
   },
   {
     id: 3,
-    img: '/images/event3.jpg',
+    img: Ev3,
     title: 'Early Childhood Education Essentials',
     date: 'Date: August 3, 2025',
     time: 'Time: 9:00 AM - 10:30 AM',
