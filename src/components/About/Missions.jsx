@@ -1,10 +1,16 @@
-import React, { useState } from "react";
-import missionImage from '../../assets/Mission.jpg'
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import missionImage from '../../assets/Mission.jpg';
 
 const Missions = () => {
+   useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+  
   const [activeTab, setActiveTab] = useState("mission");
 
-  // Content for Mission and Vision
   const content = {
     mission: {
       heading: "Our Company Mission",
@@ -24,17 +30,26 @@ const Missions = () => {
   };
 
   return (
-    <div className="bg-white px-4 py-12 font-family max-w-6xl mx-auto">
-      <p className="text-lg text-gray-600 mb-2">About Mission</p>
-      <h2 className="text-2xl md:text-3xl font-bold mb-6">
+    <div
+      className="bg-white px-4 py-12 font-family max-w-6xl mx-auto"
+      data-aos="fade-up"
+    >
+      <p className="text-lg text-gray-600 mb-2" data-aos="fade-up" data-aos-delay="100">
+        About Mission
+      </p>
+      <h2
+        className="text-2xl md:text-3xl font-bold mb-6"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         Guided by Purpose. Driven by Progress.
       </h2>
 
       {/* Tabs */}
-      <div className="flex gap-4 ">
+      <div className="flex gap-4 mb-6" data-aos="fade-up" data-aos-delay="300">
         <button
           onClick={() => setActiveTab("mission")}
-          className={`px-4 py-2 rounded-full border transition-all duration-300 cursor-pointer  ${
+          className={`px-4 py-2 rounded-full border transition-all duration-300 cursor-pointer ${
             activeTab === "mission"
               ? "bg-pink-600 text-white"
               : "bg-white text-gray-800 border-gray-300"
@@ -55,22 +70,30 @@ const Missions = () => {
       </div>
 
       {/* Content Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-8">
+      <div
+        className="flex flex-col lg:flex-row items-center gap-8"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         {/* Text */}
         <div className="flex-1 text-left">
-          <h3 className="font-semibold text-lg mb-2">{content[activeTab].heading}</h3>
-          <p className="text-gray-700 leading-loose text-md md:text-lg">{content[activeTab].text}</p>
+          <h3 className="font-semibold text-lg mb-2">
+            {content[activeTab].heading}
+          </h3>
+          <p className="text-gray-700 leading-loose text-md md:text-lg">
+            {content[activeTab].text}
+          </p>
         </div>
 
         {/* Image */}
-        <div className="relative flex-1 w-full max-w-md">
+        <div className="relative flex-1 w-full max-w-md" data-aos="zoom-in" data-aos-delay="500">
           <div className="overflow-hidden rounded-lg shadow-lg relative">
             <img
               src={missionImage}
               alt="Mission or Vision"
               className="w-full h-auto object-cover rounded-lg"
             />
-            <div className="absolute top-0 right-0 h-full  w-2 bg-primary rounded-tr-lg rounded-br-lg"></div>
+            <div className="absolute top-0 right-0 h-full w-2 bg-primary rounded-tr-lg rounded-br-lg"></div>
           </div>
         </div>
       </div>

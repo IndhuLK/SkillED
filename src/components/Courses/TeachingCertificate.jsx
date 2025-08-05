@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
 import { CheckCircle, BookOpen, Users, CalendarDays } from "lucide-react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { motion } from "framer-motion";
@@ -129,6 +130,10 @@ const assessments = [
 ];
 
 const TeachingCertificate = () => {
+  useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+
   const [openIndex, setOpenIndex] = useState(null);
   
     const toggle = (index) => {
@@ -170,10 +175,10 @@ const TeachingCertificate = () => {
 
 
   return (
-    <div className=" font-family">
+    <div className=" font-family overflow-hidden">
      <div className="bg-gray-50 text-gray-800">
   {/* 🔹 Hero Section with Background Image and Overlay Content */}
-  <div className="relative w-full h-[600px] md:h-[650px] overflow-hidden">
+  <div className="relative w-full h-[600px] md:h-[650px]">
     {/* Background Image */}
     <img
       src={Teaching} // Replace with your image import
@@ -182,13 +187,18 @@ const TeachingCertificate = () => {
     />
 
     {/* Overlay Content */}
-    <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white text-center px-4 py-8">
+    <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center 
+    text-white text-center px-4 py-8" >
       {/* Heading + Description */}
       <div className="mb-8 max-w-2xl space-y-4">
-        <h1 className="text-2xl md:text-5xl font-extrabold leading-tight">
+        <h1 className="text-2xl md:text-5xl font-extrabold leading-tight"
+        data-aos="zoom-in"
+              data-aos-delay="100">
           Certification in Teaching Skills (CTS)
         </h1>
-        <p className="text-sm md:text-lg leading-relaxed">
+        <p className="text-sm md:text-lg leading-relaxed" 
+        data-aos="zoom-in"
+              data-aos-delay="200">
           A dynamic short-term program for aspiring and in-service
           teachers to enhance practical classroom teaching and
           communication skills.
@@ -196,7 +206,9 @@ const TeachingCertificate = () => {
       </div>
 
       {/* 🔹 Course Info Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-5xl px-2 md:px-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-5xl px-2 
+      md:px-4 mb-6" data-aos="fade-up"
+              data-aos-delay="300">
         {[
           { icon: "📅", title: "Duration", desc: "1–3 Months" },
           { icon: "🎓", title: "Eligibility", desc: "10, +2 / Any Graduate" },
@@ -223,7 +235,8 @@ const TeachingCertificate = () => {
       {/* 🔹 Centered Enroll Button */}
       <div className="flex justify-center">
         <button className="cursor-pointer px-8 py-2 bg-pink-600 hover:bg-pink-700 transition 
-        rounded-full text-white text-sm md:text-base">
+        rounded-full text-white text-sm md:text-base" data-aos='fade-up'
+        data-aos-delay="250">
           Enroll Now
         </button>
       </div>
@@ -236,9 +249,12 @@ const TeachingCertificate = () => {
 
       <div className="px-4 md:px-10 py-12">
         <div className="text-center space-y-6 max-w-4xl mx-auto">
-          <h1 className="font-bold text-2xl md:text-3xl">Course Overview</h1>
+          <h1 className="font-bold text-2xl md:text-3xl"
+          data-aos="fade-up">Course Overview</h1>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg">
+          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
+          data-aos="fade-right"
+            data-aos-delay="200">
             The Certificate in Teaching Skills is a foundational program
             designed to equip aspiring and current educators with essential
             teaching techniques and classroom strategies. This short-term{" "}
@@ -248,7 +264,9 @@ const TeachingCertificate = () => {
             effectively.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg">
+          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
+          data-aos="fade-left"
+            data-aos-delay="300">
             Whether you're stepping into the teaching profession or looking to
             strengthen your existing skills, this program provides the tools and
             understanding needed to deliver meaningful learning experiences
@@ -259,15 +277,18 @@ const TeachingCertificate = () => {
 
       {/* ================= Course Modules ================= */}
       <div className="px-6">
-        <section className="bg-gradient-to-b from-secondary to-gray-200 p-8 rounded-xl shadow mb-16">
-          <h3 className="text-2xl font-semibold text-center mb-6">
+        <section className="bg-gradient-to-b from-secondary to-gray-200 p-8 rounded-xl 
+        shadow mb-16" data-aos="fade-up">
+          <h3 className="text-2xl font-semibold text-center mb-6"  data-aos="fade-down">
             Course Modules
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {CTSModules.slice(0, 9).map((mod, idx) => (
               <div
                 key={idx}
-                className="bg-white p-4 rounded-lg shadow flex flex-col justify-between  w-full"
+                className="bg-white p-4 rounded-lg shadow-md  flex flex-col justify-between  w-full"
+                data-aos="zoom-in"
+                data-aos-delay={idx * 100}
               >
                 <h4 className="font-bold text-lg text-black mb-2">
                   {mod.title}
@@ -284,7 +305,8 @@ const TeachingCertificate = () => {
       </div>
 
       {/*  ================= WhatYouWillLearn ================= */}
-      <div className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row items-center gap-10">
+      <div className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row 
+      items-center gap-10" data-aos="fade-up">
         {/* Left Image */}
         <div className="relative w-full md:w-1/2 flex justify-center">
           <img
@@ -292,7 +314,8 @@ const TeachingCertificate = () => {
             alt=""
             className="absolute bottom-0 md:h-120 h-100"
           />
-          <div className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] overflow-hidden  rounded-tr-[180px] rounded-br-[180px]">
+          <div className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] 
+          overflow-hidden  rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] rounded-bl-[5px] shadow-xl">
             <img
               src={learnImage}
               alt="Learning Visual"
@@ -302,7 +325,7 @@ const TeachingCertificate = () => {
         </div>
 
         {/* Right Content */}
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-1/2" data-aos="zoom-in">
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-800">
             What You Will Learn
           </h2>
@@ -338,7 +361,8 @@ const TeachingCertificate = () => {
        text-white"
         >
           {/* Class Duration Box - Top Left */}
-          <div className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md">
+          <div className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
+          data-aos='fade-left'>
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Class Duration
             </h2>
@@ -359,7 +383,7 @@ const TeachingCertificate = () => {
 
           <div
             className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md 
-        self-end mt-10 md:mt-0"
+        self-end mt-10 md:mt-0 " data-aos='fade-right'
           >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Eligibility Criteria
@@ -374,7 +398,8 @@ const TeachingCertificate = () => {
             </ul>
           </div>
           <div className="flex justify-end mt-4 md:pr-80">
-            <button className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition">
+            <button className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white 
+            rounded-lg shadow-xl hover:bg-pink-600 transition" data-aos='fade-down'>
               Enroll Now
             </button>
           </div>
@@ -446,9 +471,9 @@ const TeachingCertificate = () => {
       {/* ================= CourseInfoSection ================= */}
       <div className="bg-white md:px-34 px-4 py-10 flex flex-col lg:flex-row items-center lg:items-start gap-5">
         {/* Left Side */}
-        <div className="flex-1 space-y-8 lg:px-10 w-full">
+        <div className="flex-1 space-y-8 lg:px-10 w-full" data-aos="fade-up">
           {/* Eligibility */}
-          <div>
+          <div data-aos="fade-right">
             <h2 className="text-2xl font-semibold mb-4 text-center lg:text-left">
               Eligibility
             </h2>
@@ -469,7 +494,7 @@ const TeachingCertificate = () => {
           </div>
 
           {/* Course Fee */}
-          <div>
+          <div data-aos="fade-left">
             <h2 className="text-2xl font-semibold mb-4 text-center lg:text-left">
               Course Fee
             </h2>
@@ -509,15 +534,20 @@ const TeachingCertificate = () => {
       </div>
 
       {/* ================= Assessment & Certification ================= */}
-      <section className="py-10 px-4 ">
-        <div className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5">
+      <section className="py-10 px-4 "  data-aos="fade-up">
+        <div className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5 shadow"
+        data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="800">
           <h2 className="text-3xl font-bold mb-6 text-gray-800">
             Assessment and Certification
           </h2>
 
-          <div className="bg-white rounded-lg shadow p-6 space-y-4 text-left">
+          <div className="bg-white rounded-lg shadow-xl p-6 space-y-4 text-left">
             {assessments.map((item, index) => (
-              <div key={index} className="flex items-start gap-3">
+              <div key={index} className="flex items-start gap-3"
+              data-aos="fade-right"
+                data-aos-delay={`${300 + index * 100}`}>
                 <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
                 <p className="text-gray-700">
                   <strong>{item.title}</strong> {item.content}
@@ -531,7 +561,9 @@ const TeachingCertificate = () => {
       {/* ================= Turn Your Passion for Teaching Into a Profession ================= */}
       <div
         className="bg-white py-10 px-6 lg:px-20 flex flex-col lg:flex-row items-center 
-                justify-center gap-10 "
+                justify-center gap-10 " data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="100"
       >
         {/* Left Content */}
         <div className="max-w-4xl">
@@ -548,7 +580,8 @@ const TeachingCertificate = () => {
             futures through professional training. With SkillEd, you're not just
             learning — you're preparing to inspire the next generation.
           </p>
-          <button className="bg-button hover:bg-pink-700 text-white px-6 py-2 rounded-md">
+          <button className="bg-button hover:bg-pink-700 text-white px-6 py-2 rounded-md 
+          cursor-pointer shadow-xl">
             Enroll Now
           </button>
         </div>
@@ -568,7 +601,7 @@ const TeachingCertificate = () => {
       <div className="max-w-4xl mx-auto px-4 py-10 ">
       <h2 className="text-3xl font-bold mb-8 text-center">FAQs – Certification in Teaching Skills</h2>
       {faqData.map((faq, index) => (
-        <div key={index} className="border rounded mb-4 bg-white">
+        <div key={index} className="border rounded mb-4 bg-white shadow">
           <button
             onClick={() => toggle(index)}
             className="w-full text-left px-4 py-3 flex justify-between items-center"

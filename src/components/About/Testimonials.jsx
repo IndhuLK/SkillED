@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-// Import your testimonial images
 import meenaImg from "../../assets/meena.jpg";
 import rahulImg from "../../assets/rahul.jpg";
 import anithaImg from "../../assets/anitha.jpg";
@@ -30,19 +31,43 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+   useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+  
   return (
-    <section className="bg-white px-4 py-16 font-family max-w-7xl mx-auto text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">What Our Learners Say</h2>
-      <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-md md:text-lg leading-loose">
-        At SkillEd, our learners are at the heart of everything we do. From aspiring teachers to experienced professionals,
-        thousands have trusted us to help them upskill, transform their careers, and grow with confidence.
-        Here's what some of them have to say about their journey with us.
+    <section
+      className="bg-white px-4 py-16 font-family max-w-7xl mx-auto text-center"
+      data-aos="fade-up"
+    >
+      <h2
+        className="text-2xl md:text-3xl font-bold mb-4"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        What Our Learners Say
+      </h2>
+
+      <p
+        className="text-gray-600 max-w-3xl mx-auto mb-12 text-md md:text-lg leading-loose"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        At SkillEd, our learners are at the heart of everything we do. From aspiring
+        teachers to experienced professionals, thousands have trusted us to help
+        them upskill, transform their careers, and grow with confidence. Here's
+        what some of them have to say about their journey with us.
       </p>
 
       {/* Testimonials Grid */}
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         {testimonials.map((t, index) => (
-          <div key={index} className="text-center px-4">
+          <div
+            key={index}
+            className="text-center px-4"
+            data-aos="zoom-in"
+            data-aos-delay={300 + index * 100}
+          >
             <img
               src={t.image}
               alt={t.name}

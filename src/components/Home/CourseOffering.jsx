@@ -1,11 +1,14 @@
-import React from "react";
-import  TimelapseIcon  from '@mui/icons-material/Timelapse';
-import SellOutlinedIcon from '@mui/icons-material/SellOutlined';
-import Off1 from '../../assets/Off1.jpg';
-import Off2 from '../../assets/Off2.jpg';
-import Off3 from '../../assets/Off3.jpg';
-import Off4 from '../../assets/Off4.jpg';
-import Off5 from '../../assets/Off5.jpg';
+import React, { useEffect } from "react";
+import TimelapseIcon from "@mui/icons-material/Timelapse";
+import SellOutlinedIcon from "@mui/icons-material/SellOutlined";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import Off1 from "../../assets/Off1.jpg";
+import Off2 from "../../assets/Off2.jpg";
+import Off3 from "../../assets/Off3.jpg";
+import Off4 from "../../assets/Off4.jpg";
+import Off5 from "../../assets/Off5.jpg";
 
 const courseCard = [
   {
@@ -59,15 +62,19 @@ const courseCard = [
     button: "Apply Now",
   },
 ];
+
 const CourseOffering = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <section className="py-16 px-4 bg-white font-family">
-      <div className="container mx-auto text-center">
-        {/*title */}
+      <div className="container mx-auto text-center" data-aos="fade-down">
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-2">
           SkillED Course Offerings
         </h1>
-        <p className="text-gray-600 text-md md:text-lg ">
+        <p className="text-gray-600 text-md md:text-lg">
           Explore our carefully crafted programs designed to enhance teaching
           skills, classroom leadership, and professional growth for educators at
           every level.
@@ -77,10 +84,12 @@ const CourseOffering = () => {
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-10">
         {/* Top Row: 3 Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {courseCard.slice(0, 3).map((course) => (
+          {courseCard.slice(0, 3).map((course, i) => (
             <div
               key={course.id}
               className="bg-white rounded-lg shadow p-4 space-y-4"
+              data-aos="zoom-in-up"
+              data-aos-delay={`${i * 100}`}
             >
               <img
                 src={course.img}
@@ -88,13 +97,19 @@ const CourseOffering = () => {
                 className="w-full h-58 object-cover rounded"
               />
               <h2 className="text-xl font-semibold py-1">{course.title}</h2>
-              <p className="text-sm text-gray-600 ">{course.desc}</p>
+              <p className="text-sm text-gray-600">{course.desc}</p>
               <div className="flex gap-4">
                 <div className="text-sm text-gray-500">
-                  <TimelapseIcon fontSize="25" className="text-gray-800"/> {course.duration}
+                  <TimelapseIcon fontSize="25" className="text-gray-800" />{" "}
+                  {course.duration}
                 </div>
                 <div className="text-sm text-gray-500">
-                    <SellOutlinedIcon className="transform rotate-90 text-gray-800" fontSize="25"/> {course.fees}</div>
+                  <SellOutlinedIcon
+                    className="transform rotate-90 text-gray-800"
+                    fontSize="25"
+                  />{" "}
+                  {course.fees}
+                </div>
               </div>
               <div className="flex gap-2">
                 <button className="text-sm bg-gray-100 px-3 py-1 rounded hover:bg-gray-200">
@@ -108,12 +123,14 @@ const CourseOffering = () => {
           ))}
         </div>
 
-        {/* Bottom 2 Cards Centered */}
+        {/* Bottom 2 Cards */}
         <div className="flex justify-center gap-6 flex-wrap">
-          {courseCard.slice(3, 5).map((course) => (
+          {courseCard.slice(3, 5).map((course, i) => (
             <div
               key={course.id}
               className="bg-white rounded-lg shadow p-4 w-full md:w-[350px] space-y-4"
+              data-aos="fade-up"
+              data-aos-delay={`${(i + 1) * 150}`}
             >
               <img
                 src={course.img}
@@ -124,12 +141,18 @@ const CourseOffering = () => {
               <p className="text-sm text-gray-600">{course.desc}</p>
               <div className="flex gap-4">
                 <div className="text-sm text-gray-500">
-                 <TimelapseIcon fontSize="25" className="text-gray-800"/> {course.duration}
+                  <TimelapseIcon fontSize="25" className="text-gray-800" />{" "}
+                  {course.duration}
                 </div>
                 <div className="text-sm text-gray-500">
-                    <SellOutlinedIcon className="transform rotate-90 text-gray-800" fontSize="25"/> {course.fees}</div>
+                  <SellOutlinedIcon
+                    className="transform rotate-90 text-gray-800"
+                    fontSize="25"
+                  />{" "}
+                  {course.fees}
+                </div>
               </div>
-              <div className="flex gap-2 ">
+              <div className="flex gap-2">
                 <button className="text-sm bg-gray-100 px-3 py-1 rounded hover:bg-gray-200">
                   {course.Morebutton}
                 </button>
