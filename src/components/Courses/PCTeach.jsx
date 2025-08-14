@@ -9,13 +9,16 @@ import Vector5 from "../../assets/Vector5.png";
 import Dis from "../../assets/Dis.jpg";
 import programImage from "../../assets/ProgramImage.jpg";
 import girlImage from "../../assets/Professiongirl.png";
+import { Helmet } from "react-helmet";
 
 const learningPoints = [
-  "Boost your self-confidence, self-awareness, and positive attitude for personal and professional growth.",
-  "Master verbal and non-verbal communication skills, including body language, tone, and clarity.",
-  "Improve your public speaking, presentation, and group discussion abilities.",
-  "Learn time management, emotional intelligence, and workplace etiquette.",
-  "Prepare for interviews with resume writing, personal branding, and mock interview practice.",
+  "Develop confidence, self-understanding and a positive attitude towards promoting personal and career growth.",
+  "Learn non and verbal communication variants such as the tone, clarity, physical language, and hearing.",
+  "Increase your public speaking, presentation and group discussion skills.",
+  "Be ready to learn how to manage your time and emotion and how to manage professional etiquette at work.",
+  "Develop your leadership and team player capabilities to become successful in the educational setting.",
+  "Enhance people's relationships with the students, peers and stakeholders.",
+  "Get ready to go through job interviews by resume-writing, and practicing mock interviews, and personal branding.",
 ];
 
 const PDModules = [
@@ -127,8 +130,8 @@ const assessments = [
 
 const PCTeach = () => {
   useEffect(() => {
-      AOS.init({ duration: 1000 });
-    }, []);
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -137,40 +140,59 @@ const PCTeach = () => {
   };
 
   const faqData = [
-  {
-    question: "What is the Personality Development & Communication Skills course?",
-    answer:
-      "It is a training program aimed at enhancing your personal growth, self-confidence, and communication skills for better professional and social interactions.",
-  },
-  {
-    question: "Who should take this course?",
-    answer:
-      "This course is ideal for students, job seekers, teachers, and professionals who want to improve their personality, soft skills, and public speaking abilities.",
-  },
-  {
-    question: "What topics are covered in the course?",
-    answer:
-      "The course includes modules on body language, verbal & non-verbal communication, self-confidence, grooming, public speaking, interview skills, and group discussions.",
-  },
-  {
-    question: "Is the course available in different learning formats?",
-    answer:
-      "Yes, the course is offered in Online, Offline, and Blended formats to provide flexibility based on your schedule and location.",
-  },
-  {
-    question: "Will I get a certificate after completing the course?",
-    answer:
-      "Yes, upon successful completion of all sessions and assignments, you will receive a recognized certificate in Personality Development & Communication Skills.",
-  },
-  {
-    question: "What are the benefits of taking this course?",
-    answer:
-      "It helps improve your confidence, communication, and professional image—making you job-ready and effective in workplace or academic environments.",
-  },
-];
+    {
+      question:
+        "What is the Personality Development & Communication Skills course?",
+      answer:
+        "It is a training program aimed at enhancing your personal growth, self-confidence, and communication skills for better professional and social interactions.",
+    },
+    {
+      question: "Who should take this course?",
+      answer:
+        "This course is ideal for students, job seekers, teachers, and professionals who want to improve their personality, soft skills, and public speaking abilities.",
+    },
+    {
+      question: "What topics are covered in the course?",
+      answer:
+        "The course includes modules on body language, verbal & non-verbal communication, self-confidence, grooming, public speaking, interview skills, and group discussions.",
+    },
+    {
+      question: "Is the course available in different learning formats?",
+      answer:
+        "Yes, the course is offered in Online, Offline, and Blended formats to provide flexibility based on your schedule and location.",
+    },
+    {
+      question: "Will I get a certificate after completing the course?",
+      answer:
+        "Yes, upon successful completion of all sessions and assignments, you will receive a recognized certificate in Personality Development & Communication Skills.",
+    },
+    {
+      question: "What are the benefits of taking this course?",
+      answer:
+        "It helps improve your confidence, communication, and professional image—making you job-ready and effective in workplace or academic environments.",
+    },
+  ];
 
   return (
     <div className=" font-family overflow-hidden">
+      <Helmet>
+        <title>
+          Power Up Your Personality & Communication for Career Success -
+          Innovating Educators
+        </title>
+        <meta
+          name="description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta name="keywords" content="projects, portfolio, work" />
+        <meta property="og:title" content="Projects | My Website" />
+        <meta
+          property="og:description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <div className="bg-gray-50 text-gray-800">
         {/* 🔹 Hero Section with Background Image and Overlay Content */}
         <div className="relative w-full h-[600px] md:h-[650px] overflow-hidden">
@@ -184,24 +206,29 @@ const PCTeach = () => {
           {/* Overlay Content */}
           <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center text-white text-center px-4 py-8">
             {/* Heading + Description */}
-            <div className="mb-8 max-w-2xl space-y-4"
-            data-aos="fade-up"
-              data-aos-delay="200">
+            <div
+              className="mb-8 max-w-2xl space-y-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <h1 className="text-2xl md:text-5xl font-extrabold leading-tight">
-                Power Up Your Personality & Communication for Career Success
+                Power Up Your Personality & Communication to Flourish in your
+                Career
               </h1>
               <p className="text-sm md:text-lg leading-relaxed">
-                Enhance your confidence, body language, and communication skills
-                to stand out in any professional setting. Master effective
-                speaking, active listening, and interpersonal skills to boost
-                your career growth.
+                Help your educator with our personality development course on
+                presence, confidence, and communication. Stand out as a speaker,
+                an active listener, strong leader presence, and the ability to
+                build an individual relationship.
               </p>
             </div>
 
             {/* 🔹 Centered Enroll Button */}
-            <div className="flex justify-center"
-            data-aos="fade-up"
-              data-aos-delay="400">
+            <div
+              className="flex justify-center"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <button
                 className="cursor-pointer px-8 py-2 bg-pink-600 hover:bg-pink-700 transition 
         rounded-lg text-white text-sm md:text-base shadow-xl"
@@ -217,34 +244,49 @@ const PCTeach = () => {
 
       <div className="px-4 md:px-10 py-12">
         <div className="text-center space-y-6 max-w-4xl mx-auto">
-          <h1 className="font-bold text-2xl md:text-3xl"
-          data-aos="fade-up">Course Overview</h1>
+          <h1 className="font-bold text-2xl md:text-3xl" data-aos="fade-up">
+            Course Overview
+          </h1>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
-          data-aos="fade-right"
-            data-aos-delay="200">
-            This course is designed to help learners enhance their
-            self-confidence, communication style, and professional presence. It
-            focuses on key areas such as body language, voice modulation, public
-            speaking, group discussions, and personal grooming.
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            The aim of this personality development workshop on trainers is to
+            instil confidence in the aspiring and current trainers in the
+            education field, hone body language and enhance verbal and
+            non-verbal communication. It addresses the most basic things that
+            include leadership, professional ethics and values, first impression
+            tactics, etiquette, and personal evaluation.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
-          data-aos="fade-left"
-            data-aos-delay="300">
-            Through interactive sessions and practical activities, participants
-            develop strong interpersonal skills, emotional intelligence, and the
-            ability to express themselves effectively in both personal and
-            professional environments.
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            During roleplay and demonstrative activities, the participants will
+            improve their way of communication, emotional intelligence, and the
+            ability to effectively communicate with others. Whether it's
+            dressing up for a classroom, an interview, or a staff meeting, you
+            will not fail to deliver yourself coherently, gracefully and
+            professionally, because of this course.
           </p>
         </div>
       </div>
 
       {/* ================= Course Modules ================= */}
       <div className="px-6">
-        <section className="bg-gradient-to-b from-secondary to-gray-200 p-8 rounded-xl 
-        shadow mb-16" data-aos="fade-up">
-          <h3 className="text-2xl font-semibold text-center mb-6"  data-aos="fade-down">
+        <section
+          className="bg-gradient-to-b from-secondary to-gray-200 p-8 rounded-xl 
+        shadow mb-16"
+          data-aos="fade-up"
+        >
+          <h3
+            className="text-2xl font-semibold text-center mb-6"
+            data-aos="fade-down"
+          >
             Course Modules
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -270,8 +312,11 @@ const PCTeach = () => {
       </div>
 
       {/*  ================= WhatYouWillLearn ================= */}
-      <div className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row 
-      items-center gap-10" data-aos="fade-up">
+      <div
+        className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row 
+      items-center gap-10"
+        data-aos="fade-up"
+      >
         {/* Left Image */}
         <div className="relative w-full md:w-1/2 flex justify-center ">
           <img
@@ -279,8 +324,10 @@ const PCTeach = () => {
             alt=""
             className="absolute bottom-0 md:h-120 h-100 "
           />
-          <div className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] overflow-hidden  
-          rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] rounded-bl-[5px] shadow-2xl">
+          <div
+            className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] overflow-hidden  
+          rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] rounded-bl-[5px] shadow-2xl"
+          >
             <img
               src={Speak}
               alt="Learning Visual"
@@ -326,8 +373,10 @@ const PCTeach = () => {
        text-white"
         >
           {/* Class Duration Box - Top Left */}
-          <div className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
-           data-aos="fade-left">
+          <div
+            className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
+            data-aos="fade-left"
+          >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Class Duration
             </h2>
@@ -348,7 +397,8 @@ const PCTeach = () => {
 
           <div
             className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md 
-        self-end mt-10 md:mt-0"  data-aos="fade-right"
+        self-end mt-10 md:mt-0"
+            data-aos="fade-right"
           >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Eligibility Criteria
@@ -363,8 +413,10 @@ const PCTeach = () => {
             </ul>
           </div>
           <div className="flex justify-end mt-4 md:pr-80" data-aos="fade-down">
-            <button className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white 
-            shadow-2xl rounded-lg hover:bg-pink-600 transition">
+            <button
+              className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white 
+            shadow-2xl rounded-lg hover:bg-pink-600 transition"
+            >
               Enroll Now
             </button>
           </div>
@@ -373,8 +425,10 @@ const PCTeach = () => {
 
       {/* ================= Who This Program Is Made For ================= */}
       <section className="bg-white px-6 py-12 md:py-20">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10"
-        data-aos="fade-up">
+        <div
+          className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10"
+          data-aos="fade-up"
+        >
           {/* Image Section */}
           <div className="relative w-full md:w-1/2" data-aos="fade-right">
             <img
@@ -383,52 +437,78 @@ const PCTeach = () => {
               className="relative rounded-xl shadow-xl w-full z-10"
             />
             {/* Decorative border effect */}
-            <div className="absolute top-3 left-3 w-full h-full  bg-green-300 rounded-xl shadow-md z-0 "></div>
+            <div
+              className="absolute top-3 left-3 w-full h-full 
+             bg-green-300 rounded-xl shadow-md z-0 "
+            ></div>
           </div>
 
           {/* Text Content */}
           <div className="w-full md:w-1/2 space-y-10" data-aos="fade-left">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-              Who This Program Is Made For
+              Who should take this Course?
             </h2>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-up"
-              data-aos-delay="100">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  Students and Fresh Graduates:
+                  Moving on with Transition and Precision:
                 </strong>{" "}
-                Looking to build confidence, improve communication, and prepare
-                for campus placements or job interviews.
+                Career change or new opportunities in the field of education are
+                possible with the presented course, allowing you to realize
+                conceptual clarity, solid self-awareness, and emotional
+                intelligence. Educator personality development training would
+                provide the tools required to manage interviews, orientating to
+                new environments and settling as a competent and confident
+                teacher.
               </p>
             </div>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-up"
-              data-aos-delay="200">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
-                <strong className="text-xl">Working Professionals:</strong>{" "}
-                Seeking to enhance soft skills, leadership presence, and
-                interpersonal effectiveness for career growth.
+                <strong className="text-xl">
+                  Prepping Future Teachers to Interview and Beyond:
+                </strong>{" "}
+                Meeting and greeting are the main problems such as interviews,
+                group discussions, and the ability to speak with a great number
+                of people. This communication and personality development
+                training to the educators prepares them with the self-assurance
+                to deliver solid first impression, communication and presence.
+                The study of voice modulation to self-analysis sets strong
+                grounds of venturing into the education sector.
               </p>
             </div>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-up"
-              data-aos-delay="300">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  Career Changers and Job Seekers:
+                  Professional Presence in Classroom:
                 </strong>{" "}
-                Wanting to sharpen their personality and presentation for a
-                successful transition into new roles or industries.
+                Among people who are already experienced professionals, this
+                program supports their leadership presence, ethical and
+                interpersonal skills which are required in educational contexts.
+                It is aimed at reinforcing oral and non-oral communication,
+                learning how to behave, having positive relationships with
+                students, parents, and peers. It is not only communication, it
+                is an incentive to be a fine teacher.
               </p>
             </div>
           </div>
@@ -501,19 +581,23 @@ const PCTeach = () => {
       </div>
 
       {/* ================= Assessment & Certification ================= */}
-      <section className="py-10 px-4 " >
-        <div className="max-w-3xl shadow-md mx-auto text-center bg-gray-50 px-10 py-5"
-        data-aos="fade-up"
+      <section className="py-10 px-4 ">
+        <div
+          className="max-w-3xl shadow-md mx-auto text-center bg-gray-50 px-10 py-5"
+          data-aos="fade-up"
           data-aos-delay="100"
-          data-aos-duration="800">
+          data-aos-duration="800"
+        >
           <h2 className="text-3xl font-bold mb-6 text-gray-800">
             Assessment and Certification
           </h2>
 
-          <div className="bg-white rounded-lg shadow p-6 space-y-4 text-left"
-          data-aos="fade-up"
+          <div
+            className="bg-white rounded-lg shadow p-6 space-y-4 text-left"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             {assessments.map((item, index) => (
               <div key={index} className="flex items-start gap-3">
                 <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
@@ -532,25 +616,29 @@ const PCTeach = () => {
                 justify-center gap-10 "
       >
         {/* Left Content */}
-        <div className="max-w-4xl"
-        data-aos="fade-right"
+        <div
+          className="max-w-4xl"
+          data-aos="fade-right"
           data-aos-duration="1000"
-          data-aos-delay="100">
+          data-aos-delay="100"
+        >
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">
-            Step Into a Rewarding Career in Education
+            Take your First Step to a Confident Teaching Career
           </h2>
           <p className="text-gray-700 text-base lg:text-lg mb-4 leading-loose">
-            Strong personality and communication skills are essential for anyone
-            looking to make a mark in the education field. Whether you're
-            speaking to students, parents, or colleagues, the ability to express
-            yourself clearly and confidently builds trust and leadership.
+            When you are ready to revamp your career and communication skills
+            then this course (personality development training in education) is
+            the way forward. acquire the skills to lead, inspire and expand--in
+            and out of the classroom.
           </p>
           <p className="text-gray-700 text-base lg:text-lg mb-6">
-            TThis course is designed to help you develop a positive attitude,
-            refine your body language, and enhance verbal and non-verbal
-            communication. With these skills, you'll not only perform better in
-            interviews and classrooms but also grow personally and
-            professionally.
+            TOnce you decide to transform your career and communication
+            abilities, our personality development training regarding education
+            is the direction to go. This program assists you to perfect
+            communication in a classroom, improve self-esteem and develop a
+            leadership image. As you mentor young minds or plot your path to
+            career growth, the skills that you acquire here will enable you to
+            lead, connect and rise in any educational environment.
           </p>
           <button className="shadow-xl cursor-pointer bg-button hover:bg-pink-700 text-white px-6 py-2 rounded-md">
             Enroll Now
@@ -558,10 +646,12 @@ const PCTeach = () => {
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-[400px]"
-        data-aos="fade-left"
+        <div
+          className="w-full lg:w-[400px]"
+          data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-delay="200">
+          data-aos-delay="200"
+        >
           <img
             src={girlImage}
             alt="Student"
@@ -573,15 +663,20 @@ const PCTeach = () => {
       {/* ================= Frequently Asked Questions ================= */}
       <div className="bg-gray-50 mb-2" data-aos="fade-up">
         <div className="max-w-4xl mx-auto px-4 py-10 ">
-          <h2 className="text-3xl font-bold mb-8 text-center"
-          data-aos="fade-up"
-            data-aos-delay="100">
+          <h2
+            className="text-3xl font-bold mb-8 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             FAQs – Certification in Teaching Skills
           </h2>
           {faqData.map((faq, index) => (
-            <div key={index} className="border rounded mb-4 bg-white shadow"
-            data-aos="fade-up"
-              data-aos-delay={`${200 + index * 100}`}>
+            <div
+              key={index}
+              className="border rounded mb-4 bg-white shadow"
+              data-aos="fade-up"
+              data-aos-delay={`${200 + index * 100}`}
+            >
               <button
                 onClick={() => toggle(index)}
                 className="w-full text-left px-4 py-3 flex justify-between items-center"

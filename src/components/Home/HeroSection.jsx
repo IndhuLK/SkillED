@@ -23,8 +23,8 @@ const HeroSection = () => {
             data-aos="fade-right"
             data-aos-delay="400"
           >
-            Empowering Educators,<br />
-            Inspiring Generations
+             Empowering Educators, <br />
+            Enabling Futures.
           </h1>
 
           <p
@@ -32,8 +32,8 @@ const HeroSection = () => {
             data-aos="fade-left"
             data-aos-delay="600"
           >
-            Join SKillED’s dynamic community of educators transforming
-            the way the world learns—one classroom at a time.
+             Join SkillED in its mission of informing the classrooms with certified and trusted educator training.
+
           </p>
 
           <button

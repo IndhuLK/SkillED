@@ -11,6 +11,8 @@ import ECCE from './components/Courses/ECCE';
 import PCTeach from './components/Courses/PCTeach';
 import ModernTech from './components/Courses/ModernTech';
 import ContactUs from './components/Contact/ContactUs';
+import Blogs from './components/Blogs/Blogs';
+import BusinessExpension from './components/Blogs/BusinessExpension';
 
 function App() {
  
@@ -28,6 +30,8 @@ function App() {
       <Route path="/courses/ecce-certificate" element={<ECCE />} />
       <Route path="/courses/personality-communication" element={<PCTeach />} />
       <Route path="/courses/modern-teaching" element={<ModernTech />} />
+      <Route path="/blogs" element={<Blogs />} />
+      <Route path="/blog1" element={<BusinessExpension />} />
 
       <Route path="/contact" element={<ContactUs />} />
 

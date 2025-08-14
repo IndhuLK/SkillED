@@ -6,7 +6,7 @@ import girlImage from "../../assets/GirlThumbsUp.png";
 import vector from "../../assets/Vector3.png";
 
 const WhyChoose = () => {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
@@ -28,16 +28,17 @@ const WhyChoose = () => {
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        At Skill Ed, we don’t just offer courses — we shape confident, future-ready professionals.
-        Our programs are designed to be practical, flexible, and aligned with the latest global teaching
-        standards. Whether you're stepping into the education field or upgrading your skills,
-        SkillEd ensures that you gain real value from every lesson.
+        We do not simply provide courses but instead, we provide high-quality
+        educator training that you can trust and turn your career around. Our
+        teacher training programs are internally and externally accredited and
+        meet world-class teacher standards. At the end of the program, you will
+        be a qualified teacher with a door to career opportunities in India or
+        abroad.
       </p>
 
       {/* Image + Points Section */}
       <div className="max-w-7xl mx-auto w-full">
         <div className="flex flex-col lg:flex-row items-center justify-center md:gap-30 gap-5">
-          
           {/* Image Section */}
           <div
             className="relative w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] lg:w-[350px] lg:h-[350px] flex-shrink-0"
@@ -68,7 +69,7 @@ const WhyChoose = () => {
               "Flexible Learning: Online / Hybrid / In-Person",
               "Industry-Ready Curriculum",
               "Real-World Training & Projects",
-              "Expert Faculty & Mentors"
+              "Expert Faculty & Mentors",
             ].map((item, index) => (
               <li
                 key={index}

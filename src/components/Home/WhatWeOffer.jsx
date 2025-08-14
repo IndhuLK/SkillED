@@ -5,27 +5,27 @@ const WhatWeOffer = () => {
   const offerCards = [
     {
       icon: <Users className="h-8 w-8 text-green-600" />,
-      title: '10+ years of excellence',
+      title: 'Ways to Be a Teacher',
       description:
-        'Our commitment to quality training and meaningful partnerships has helped thousands of teachers grow, lead, and inspire in classrooms across the country.',
+        'We have a wide range of offerings such as Bachelor of Education (B.Ed), Master of Education (M.Ed) whereby potential teachers are given a good theoretical and practical background in teaching. We ensure our courses track with a diploma in teaching and graduate diploma in teaching and are academically and career ready.',
     },
     {
       icon: <FileText className="h-8 w-8 text-green-600" />,
-      title: 'In Class & Online Class',
+      title: 'ECE Programs',
       description:
-        'Whether you prefer hands-on in-class sessions or the convenience of online learning, SkillEd offers both formats to suit your needs—without compromising on quality or engagement.',
+        'Formal education in the form of specialized courses such as certificate in ECCE programme Trichy, nursery teacher training NTT Trichy course, diploma in Montessori teacher training Trichy varieties guarantee quality care and early learning to young minds. The programs will prepare the educators to possess contemporary, kid-centric pedagogies.',
     },
     {
       icon: <Monitor className="h-8 w-8 text-green-600" />,
-      title: 'Career Monitoring',
+      title: 'Skill-Enhancement and Personality enrichment',
       description:
-        'Our career monitoring services provide continuous support, feedback, and personalized growth plans to help educators achieve their professional goals with confidence.',
+        'Our learning paths incorporate learning approaches course Trichy and personality development training of teachers course Trichy into the entire learning paths. They aid personal improvement, classroom management- which are ingredients of effective teaching.',
     },
     {
       icon: <Handshake className="h-8 w-8 text-green-600" />,
-      title: '400+ Academic Partnerships',
+      title: 'Career/ Placement Support',
       description:
-        'SkillEd proudly collaborates with schools, colleges, and training centers to deliver impactful programs that uplift educators and enhance learning environments.',
+        'Our guidance and growth planning are guided by practice in the real world through continuing career monitoring of the teacher training graduates, as well as the online teacher training placement assistance Trichy. We have programs that help you explore the prospect of having a sustainable career as a teacher through an in-class and online diploma in teaching.',
     },
   ];
 
@@ -45,7 +45,8 @@ const WhatWeOffer = () => {
           className="text-xl sm:text-3xl font-bold text-gray-800 mb-12"
           data-aos="fade-up"
         >
-          For Your Future Learning
+           Extensive training of 21st century educators
+
         </h2>
 
         {/* Cards Grid */}

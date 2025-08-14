@@ -90,15 +90,18 @@ const WelcomeSection = () => {
               Welcome to SkillED
             </h2>
             <p className="text-gray-600 leading-relaxed md:text-lg text-md">
-              SkillED is a trusted name in educator development, recognized and
-              supported by reputed national and international organizations. We
-              are proudly registered under the Ministry of Corporate Affairs,
-              Government of India. SkillED collaborates with globally recognized
-              bodies to maintain high standards in teaching excellence. Our
-              affiliations reflect our dedication to quality training, helping
-              educators and institutions make informed choices. Whether in
-              schools or professional training centers, SkillED stands as a
-              symbol of innovation, empowerment, and educational impact.
+              SkillED is an internationally and nationally known trusted system
+              of educator preparation. Being registered with the Ministry of
+              Corporate Affairs, Government of India, SkillED works in
+              partnership with international organizations and other academic
+              centers to uphold the level of strictest quality in the field of
+              teaching and learning. Through our vibrant programs in the diploma
+              in teaching skills Trichy and graduate diploma in teaching (early
+              childhood education) we continue to develop competent and
+              confident educators who will be the teachers of the future school.
+              SkillED provides the appropriate atmosphere whether you want to
+              pursue a 1 year diploma in teaching or a postgraduate diploma in
+              teaching.
             </p>
           </div>
         </div>
@@ -107,14 +110,21 @@ const WelcomeSection = () => {
       {/* Bottom Section */}
       <div className="bg-secondary py-16 px-10" data-aos="fade-up">
         <h1 className="font-bold text-3xl mb-2">
-          One of the Most Recognized Teacher Training Providers
+          Quality meets Trust in Teaching
         </h1>
         <p className="mt-3 text-md md:text-lg text-md">
-          SkillED has consistently been acknowledged for its excellence in
-          educator training. Our commitment to quality and innovation has earned
-          us recognition from leading education platforms and partners for
-          multiple consecutive years—setting us apart as a trusted name in
-          professional development.
+          SkillED remains to be a benchmark in teacher training as one of the
+          most well-known names in trusted educator training in India. We are
+          there to help you through all the stages including diploma in teaching
+          course selection to career achievement. Our market-oriented and
+          targeted solutions include Cambridge international diploma in teaching
+          and learning, pg diploma in teaching english and online teacher
+          training placement support Trichy to make teachers shine in the
+          international educational market. Thousands of talented practitioners
+          are carving out the classrooms across the globe through the production
+          of the same under our programs in graduate diploma in teaching (early
+          childhood education level 7) and othm level 6 diploma in teaching and
+          learning.
         </p>
       </div>
     </div>

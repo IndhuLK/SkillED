@@ -22,8 +22,8 @@ const NavFoot = () => {
       ],
     },
     { name: "About Us", href: "/about" },
-    { name: "Placements", href: "#" },
-    { name: "Blogs", href: "#" },
+   
+    { name: "Blogs", href: "/blogs" },
     { name: "Contact Us", href: "/contact" },
   ];
 

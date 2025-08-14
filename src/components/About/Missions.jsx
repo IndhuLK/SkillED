@@ -2,30 +2,23 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import missionImage from '../../assets/Mission.jpg';
+import missionImage from "../../assets/Mission.jpg";
 
 const Missions = () => {
-   useEffect(() => {
-      AOS.init({ duration: 1000 });
-    }, []);
-  
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   const [activeTab, setActiveTab] = useState("mission");
 
   const content = {
     mission: {
-      heading: "Our Company Mission",
-      text: `At Skill Ed, our mission is to empower individuals with practical,
-      globally relevant skills that help them thrive in teaching, communication,
-      and personal development. We aim to create confident, compassionate educators
-      and professionals who can make a meaningful impact in the lives of learners
-      and in their own careers.`,
+      heading: "Our Mission -With Purpose, Driven by Progress",
+      text: `Our mission is to provide individuals with relevant hands-on capabilities that equip them to make achievements in the sphere of training of teachers and the sphere of teacher training in general. Our objective is to nurture fully confident, compassionate educators, with a graduate diploma in teaching (early childhood education), postgraduate diploma in teaching’ and diploma in Montessori teacher training in Trichy.`,
     },
     vision: {
       heading: "Our Vision",
-      text: `Our vision is to be a global leader in education innovation,
-      delivering impactful learning experiences that shape future educators and professionals.
-      We strive to inspire lifelong learning, support career transformation,
-      and build communities that thrive through knowledge and empowerment.`,
+      text: `We aspire to be a global hub in trusted educator training and certified teacher training and have dynamic programs like Diploma in Teaching Skills, Certification in Teaching Skills and Early Childhood Education- Certificate in ECCE, that makes a difference. It is our purpose to establish new principles of contemporary teaching approach and personality growth training in a modern educator, bringing inspiration of lifelong learning and career change. Providing internationally accepted certification and teaching practices will help to create competent professionals and teachers with confidence to create a positive difference in teaching and training in any community or classroom across the world.`,
     },
   };
 
@@ -34,7 +27,11 @@ const Missions = () => {
       className="bg-white px-4 py-12 font-family max-w-6xl mx-auto"
       data-aos="fade-up"
     >
-      <p className="text-lg text-gray-600 mb-2" data-aos="fade-up" data-aos-delay="100">
+      <p
+        className="text-lg text-gray-600 mb-2"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
         About Mission
       </p>
       <h2
@@ -86,7 +83,11 @@ const Missions = () => {
         </div>
 
         {/* Image */}
-        <div className="relative flex-1 w-full max-w-md" data-aos="zoom-in" data-aos-delay="500">
+        <div
+          className="relative flex-1 w-full max-w-md"
+          data-aos="zoom-in"
+          data-aos-delay="500"
+        >
           <div className="overflow-hidden rounded-lg shadow-lg relative">
             <img
               src={missionImage}

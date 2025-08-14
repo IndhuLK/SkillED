@@ -9,13 +9,14 @@ import Vector5 from "../../assets/Vector5.png";
 import MD from "../../assets/MD.jpg";
 import programImage from "../../assets/ProgramImage.jpg";
 import girlImage from "../../assets/Professiongirl.png";
+import { Helmet } from "react-helmet";
 
 const learningPoints = [
-  "Master innovative and learner-centered teaching strategies tailored for 21st-century classrooms.",
-  "Gain expertise in integrating digital tools, gamification, and blended learning in your lesson plans.",
-  "Understand classroom management techniques to foster a positive and inclusive environment",
-  "Develop skills to assess learning outcomes effectively using modern evaluation tools.",
-  "Enhance your ability to design engaging curriculum content aligned with NEP 2020 goals.",
+  "Utilize learner-based classroom practices based on effective learning theories that apply to 21st-century teaching.",
+  "Promote engaging and positive behavior and inclusivity by means of presenting good classroom management and contact strategies.",
+  "Design curriculum that goes in line with NEP 2020, being creative, thinking, and practical oriented answers.",
+  "Facilitate self-directed- and peer-learning and promote interactivity in social classroom settings.",
+  "Increase your professional development through learning advanced pedagogies and reflective teaching.",
 ];
 
 const ModernTeachModules = [
@@ -180,6 +181,24 @@ const ModernTech = () => {
 
   return (
     <div className=" font-family overflow-hidden">
+      <Helmet>
+        <title>
+          Digital-First Teaching Strategies for Dynamic Classrooms - Innovating
+          Educators
+        </title>
+        <meta
+          name="description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta name="keywords" content="projects, portfolio, work" />
+        <meta property="og:title" content="Projects | My Website" />
+        <meta
+          property="og:description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <div className="bg-gray-50 text-gray-800">
         {/* 🔹 Hero Section with Background Image and Overlay Content */}
         <div className="relative w-full h-[600px] md:h-[650px] overflow-hidden">
@@ -202,11 +221,11 @@ const ModernTech = () => {
                 Digital-First Teaching Strategies for Dynamic Classrooms
               </h1>
               <p className="text-sm md:text-lg leading-relaxed">
-                Digital-First Teaching Strategies empower educators to create
-                engaging, tech-integrated classrooms that support interactive,
-                student-centered learning. These methods enhance participation,
-                personalize instruction, and build essential 21st-century
-                skills.
+                Become an Expert in the Modern Teaching Methodology to Transform
+                21 st -Century Classrooms. Increase your repertoire of learning
+                theories, digital resources, and classroom interventions to both
+                support peer learning, positive behavior, and sustainable
+                professional development.
               </p>
             </div>
 
@@ -240,11 +259,13 @@ const ModernTech = () => {
             data-aos="fade-right"
             data-aos-delay="200"
           >
-            The Certificate in Modern Teaching Methodologies is a comprehensive
-            program designed to equip educators with the latest tools,
-            techniques, and strategies for effective 21st-century teaching. This
-            course blends theory with hands-on practice, empowering teachers to
-            create engaging, inclusive, and learner-centric classrooms.
+            The Certificate in Modern Teaching Methodologies is proposed to be a
+            changing program offering the opportunity to acquire new up-to-date
+            learning theories, the methods of teaching, and digital
+            technological resources to address the needs of modern learners. The
+            program combines the latest pedagogy with that practice, so
+            educators feel confident and creative in integrating their
+            inclusive, engaging and learner-driven classrooms.
           </p>
 
           <p
@@ -252,12 +273,15 @@ const ModernTech = () => {
             data-aos="fade-left"
             data-aos-delay="300"
           >
-            Participants will explore innovative pedagogical approaches, digital
-            teaching aids, classroom management strategies, and assessment
-            techniques aligned with NEP 2020. Whether you're a new teacher or an
-            experienced educator, this course will enhance your ability to
-            inspire and educate diverse learners in dynamic and evolving
-            educational environments.
+            The participants will be engaged with contemporary classroom
+            concepts that ensure peer learning, embraces favorable behavior, and
+            learners with different learning styles. The introduction of a
+            proper balance between the theories of learning and real-time
+            instructional practices is emphasized, which guarantees sustainable
+            professional development. Regardless of whether you are a new person
+            in education or an experienced educator this course fits the NEP
+            2020 paradigm, helping to master a different and dynamic landscape
+            of education.
           </p>
         </div>
       </div>
@@ -310,9 +334,11 @@ const ModernTech = () => {
             alt=""
             className="absolute bottom-0 md:h-120 h-100"
           />
-          <div className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] 
+          <div
+            className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] 
           overflow-hidden  rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] 
-          rounded-bl-[5px] shadow-xl">
+          rounded-bl-[5px] shadow-xl"
+          >
             <img
               src={LearnMD}
               alt="Learning Visual"
@@ -358,8 +384,10 @@ const ModernTech = () => {
        text-white"
         >
           {/* Class Duration Box - Top Left */}
-          <div className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
-          data-aos="fade-left">
+          <div
+            className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
+            data-aos="fade-left"
+          >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Class Duration
             </h2>
@@ -380,7 +408,8 @@ const ModernTech = () => {
 
           <div
             className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md 
-        self-end mt-10 md:mt-0" data-aos="fade-right"
+        self-end mt-10 md:mt-0"
+            data-aos="fade-right"
           >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Eligibility Criteria
@@ -404,8 +433,10 @@ const ModernTech = () => {
 
       {/* ================= Who This Program Is Made For ================= */}
       <section className="bg-white px-6 py-12 md:py-20">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10"
-        data-aos="fade-up">
+        <div
+          className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10"
+          data-aos="fade-up"
+        >
           {/* Image Section */}
           <div className="relative w-full md:w-1/2" data-aos="fade-right">
             <img
@@ -418,45 +449,56 @@ const ModernTech = () => {
           </div>
 
           {/* Text Content */}
-          <div className="w-full md:w-1/2 space-y-10"  data-aos="fade-left">
+          <div className="w-full md:w-1/2 space-y-10" data-aos="fade-left">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
               Who This Program Is Made For
             </h2>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-up"
-              data-aos-delay="100">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
-                <strong className="text-xl">Aspiring Educators:</strong> who
-                want to build a strong foundation in modern classroom practices.
+                <strong className="text-xl">Aspiring Educators:</strong> Those
+                who have their eyes set on establishing a strong base in the
+                learning theories, and up to date classroom strategies so that
+                they can excel, starting off on the first day itself.
               </p>
             </div>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-up"
-              data-aos-delay="200">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
-                <strong className="text-xl">In-Service Teachers:</strong> Aiming
-                to upgrade their skills with contemporary teaching techniques
-                and NEP 2020 guidelines.
+                <strong className="text-xl">In-Service Teachers:</strong> They
+                hope to renew knowledge with the use of new digital tools,
+                NEP-based practices, and the transformation of classroom
+                teaching to accommodate positive behavior and inclusion
+                teaching.
               </p>
             </div>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-up"
-              data-aos-delay="300">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
                   School Leaders and Coordinators:
                 </strong>{" "}
-                Seeking to implement innovative and learner-centric approaches
-                in their institutions.
+                Motivated by advancing innovation, professional development
+                within teams, introduced organized peer-to-peer learning and
+                curricular improvement by technology in the school institutions.
               </p>
             </div>
           </div>
@@ -468,7 +510,7 @@ const ModernTech = () => {
         {/* Left Side */}
         <div className="flex-1 space-y-8 lg:px-10 w-full" data-aos="fade-up">
           {/* Eligibility */}
-          <div  data-aos="fade-right">
+          <div data-aos="fade-right">
             <h2 className="text-2xl font-semibold mb-4 text-center lg:text-left">
               Eligibility
             </h2>
@@ -530,23 +572,29 @@ const ModernTech = () => {
 
       {/* ================= Assessment & Certification ================= */}
       <section className="py-10 px-4 ">
-        <div className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5 shadow"
-        data-aos="fade-up"
+        <div
+          className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5 shadow"
+          data-aos="fade-up"
           data-aos-delay="100"
-          data-aos-duration="800">
+          data-aos-duration="800"
+        >
           <h2 className="text-3xl font-bold mb-6 text-gray-800">
             Assessment and Certification
           </h2>
 
-          <div className="bg-white rounded-lg shadow-md p-6 space-y-4 text-left"
-          data-aos="fade-up"
+          <div
+            className="bg-white rounded-lg shadow-md p-6 space-y-4 text-left"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             {assessments.map((item, index) => (
-              <div key={index} className="flex items-start gap-3"
-              data-aos="fade-right"
-                data-aos-delay={`${300 + index * 100}`}>
-
+              <div
+                key={index}
+                className="flex items-start gap-3"
+                data-aos="fade-right"
+                data-aos-delay={`${300 + index * 100}`}
+              >
                 <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
                 <p className="text-gray-700">
                   <strong>{item.title}</strong> {item.content}
@@ -563,41 +611,47 @@ const ModernTech = () => {
                 justify-center gap-10 "
       >
         {/* Left Content */}
-        <div className="max-w-4xl"
-        data-aos="fade-right"
+        <div
+          className="max-w-3xl"
+          data-aos="fade-right"
           data-aos-duration="1000"
-          data-aos-delay="100">
-
+          data-aos-delay="100"
+        >
           <h2 className="text-2xl lg:text-3xl font-semibold text-gray-900 mb-4">
-            Step Into a Rewarding Career in Education
+            Enter a Career in Teaching to Rewarded & Be Proud of
           </h2>
-          <p className="text-gray-700 text-base lg:text-lg mb-4 leading-loose">
-            The Certificate in Modern Teaching Methodologies equips aspiring and
-            in-service educators with the tools, techniques, and insights needed
-            to thrive in today’s dynamic classrooms. By aligning with NEP 2020
-            and incorporating global best practices, this course ensures you
-            stay ahead with contemporary approaches in pedagogy, child
-            engagement, and curriculum design.
+          <p className="text-gray-700 text-base lg:text-lg mb-4 ">
+            The Certificate in Modern Teaching Methodologies facilitates the
+            process of valuable professional development by providing an
+            educator with up-to-date information, the worldwide tendencies in
+            teaching, and the tested theories in learning. The course is based
+            on the principles of NEP 2020, which promotes reflective teachers,
+            empathic leadership, and active student engagement using classroom
+            strategies that are properly planned.
           </p>
           <p className="text-gray-700 text-base lg:text-lg mb-6">
-            Whether you’re entering the teaching profession or upgrading your
-            skills, this program opens doors to diverse opportunities in
-            schools, educational institutions, and digital learning platforms.
-            With a strong foundation in both theoretical knowledge and practical
-            strategies, you’ll be empowered to make a real difference in the
-            lives of your learners.
+            Using digital tools, peer learning, and the creation of environments
+            that foster positive behavior, you will also receive hands-on
+            experience working in a digital classroom setting (or the regular
+            classroom of the past). Whether you are starting your career or
+            growing in your career, in this program you will be an educator who
+            is inspiring, adaptive, and purpose-driven.
           </p>
-          <button className="shadow-xl cursor-pointer bg-button hover:bg-pink-700 text-white px-6 py-2 rounded-md"
-          data-aos='fade-down'>
+          <button
+            className="shadow-xl cursor-pointer bg-button hover:bg-pink-700 text-white px-6 py-2 rounded-md"
+            data-aos="fade-down"
+          >
             Enroll Now
           </button>
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-[400px]"
-        data-aos="fade-left"
+        <div
+          className="w-full lg:w-[400px]"
+          data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-delay="200">
+          data-aos-delay="200"
+        >
           <img
             src={girlImage}
             alt="Student"
@@ -609,15 +663,20 @@ const ModernTech = () => {
       {/* ================= Frequently Asked Questions ================= */}
       <div className="bg-gray-50 mb-2" data-aos="fade-up">
         <div className="max-w-4xl mx-auto px-4 py-10 ">
-          <h2 className="text-3xl font-bold mb-8 text-center"
-          data-aos="fade-up"
-            data-aos-delay="100">
+          <h2
+            className="text-3xl font-bold mb-8 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             FAQs – Certification in Teaching Skills
           </h2>
           {faqData.map((faq, index) => (
-            <div key={index} className="border rounded mb-4 bg-white shadow"
-             data-aos="fade-up"
-              data-aos-delay={`${200 + index * 100}`}>
+            <div
+              key={index}
+              className="border rounded mb-4 bg-white shadow"
+              data-aos="fade-up"
+              data-aos-delay={`${200 + index * 100}`}
+            >
               <button
                 onClick={() => toggle(index)}
                 className="w-full text-left px-4 py-3 flex justify-between items-center"

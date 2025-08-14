@@ -15,12 +15,12 @@ const testimonials = [
   },
   {
     name: "Rahul K",
-    text: "As a working professional, I needed a flexible course. Skill Ed’s hybrid format allowed me to learn at my pace while still getting expert guidance. Highly recommended.",
+    text: "I am a working professional and therefore required a flexible course. The combination of online and in-person format in SkillEd helped me study at my own pace, but not without professional help.",
     image: rahulImg,
   },
   {
     name: "Anitha R",
-    text: "The Certificate in Modern Teaching Methodologies gave me the confidence to switch careers. Today, I’m successfully teaching at a reputed institution.",
+    text: "The Certificate in Modern Teaching Methodologies made me have the courage to change my career. I am now a teacher at a good institution with success.",
     image: anithaImg,
   },
   {

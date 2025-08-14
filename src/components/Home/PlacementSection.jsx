@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import explore1 from '/src/assets/Explore.jpg';
-import explore2 from '/src/assets/short.png';
-import explore3 from '/src/assets/furture.jpg';
+import React, { useState } from "react";
+import explore1 from "/src/assets/Explore.jpg";
+import explore2 from "/src/assets/short.png";
+import explore3 from "/src/assets/furture.jpg";
 
 const images = [explore1, explore2, explore3];
 
@@ -11,7 +11,6 @@ const PlacementSection = () => {
   return (
     <section className="py-10 px-4 bg-white font-family">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-12">
-        
         {/* ✅ Image Section (Left) */}
         <div
           className="w-full lg:w-1/2 flex flex-col items-center lg:items-end"
@@ -31,7 +30,7 @@ const PlacementSection = () => {
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`h-2 w-2 rounded-full transition-colors duration-300 ${
-                    index === currentSlide ? 'bg-green-500' : 'bg-gray-300'
+                    index === currentSlide ? "bg-green-500" : "bg-gray-300"
                   }`}
                 ></button>
               ))}
@@ -45,19 +44,20 @@ const PlacementSection = () => {
           data-aos="fade-left"
         >
           <h2 className="text-xl sm:text-3xl font-bold text-gray-800 mb-6">
-            Shaping Careers with 100% Placement Assistance
+            Creating Careers with 100 percent placement assistance
           </h2>
           <p className="text-gray-600 leading-relaxed text-lg">
-            At our teacher training institute, we go beyond just delivering certifications—we build strong,
-            confident educators ready to make an impact worldwide. Our curriculum blends academic theory with
-            real-world classroom practice, guided by expert trainers and global teaching standards.
-            From day one, you'll receive personalized mentorship, hands-on experience, and continuous support
-            to help you grow into a skilled, adaptable professional.
-            With a proven track record of successful alumni placements, we don't just prepare you for the job—we
-            guide you into it, ensuring every graduate walks into their career with clarity, confidence, and opportunity.
+            But at SkillED we do more than coursework- we provide quality
+            educator training with a grounded difference to underpin your
+            training in our real classrooms. Our training curriculum integrates
+            best theory with practical training, in line with national standards
+            of early childhood or inclusive education. You will start on day one
+            with highly skilled mentors and work towards career ambitions of a
+            lifetime. Our one-time investment in your future can be measured in
+            individualized learning paths, and possible successful graduate
+            placements. We not only teach, we make careers.
           </p>
         </div>
-
       </div>
     </section>
   );

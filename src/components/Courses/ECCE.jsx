@@ -9,14 +9,15 @@ import Vector5 from "../../assets/Vector5.png";
 import bgImg from "../../assets/bgImg.jpg";
 import programImage from "../../assets/ProgramImage.jpg";
 import girlImage from "../../assets/Professiongirl.png";
+import { Helmet } from "react-helmet";
 
 const learningPoints = [
-  "Understand child development stages (0–8 years) and how to support physical, emotional, and cognitive growth.",
-  "Learn play-based and child-centered teaching methods including Montessori, storytelling, and art activities.",
-  "Plan engaging daily routines, lesson plans, and theme-based curriculum for preschool levels.",
-  "Create and use low-cost teaching-learning materials (TLMs) to enhance classroom learning.",
-  "Assess child progress through observation, portfolios, and play-based assessment tools.",
-  "Develop professional skills like classroom management, parent communication, and inclusive practices.",
+  "Learn about child stages (0 to 8 years) and the way to help them with physical, emotional and cognitive needs.",
+  "Use child-focused strategies such as development of stories, Montessori techniques, and designing activities to generate creativity and curiosity.",
+  "Interesting activity planning and lesson plans driven by the themes based learning to be followed by preschool students.",
+  "Design and make inexpensive learning props which will enhance sensory and motor development.",
+  "Monitor, record and evaluate child development with the play-based observations and portfolio methods.",
+  "Along with adult professionals, develop professional experience like classroom management experience, inclusive education experience and family connectivity strategies.",
 ];
 
 const ECCEModules = [
@@ -129,9 +130,9 @@ const assessments = [
 ];
 
 const ECCE = () => {
-   useEffect(() => {
-      AOS.init({ duration: 1000 });
-    }, []);
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggle = (index) => {
@@ -139,43 +140,56 @@ const ECCE = () => {
   };
 
   const faqData = [
-  {
-    question: "What is the Certificate in ECCE program?",
-    answer:
-      "The Certificate in ECCE is a professional course designed to train individuals in early childhood education, focusing on the development and care of children aged 0–8 years.",
-  },
-  {
-    question: "Who can enroll in the ECCE course?",
-    answer:
-      "Anyone who has completed 10+2 or holds a graduation degree can enroll. It's ideal for aspiring preschool teachers, fresh graduates, and those switching careers.",
-  },
-  {
-    question: "What topics are covered in this course?",
-    answer:
-      "The course covers child development, play-based learning, classroom setup, child assessment, teaching aids, and inclusive education practices based on NEP 2020.",
-  },
-  {
-    question: "Is the ECCE course available in flexible formats?",
-    answer:
-      "Yes, the ECCE course is offered in Online, Offline, and Blended learning modes to suit different learning preferences and schedules.",
-  },
-  {
-    question: "Will I get a certificate after completing the course?",
-    answer:
-      "Yes, after completing all modules and practicum requirements, you will receive a Certificate in ECCE recognized by reputed institutions.",
-  },
-  {
-    question: "What are the career options after ECCE?",
-    answer:
-      "You can work as a preschool teacher, daycare facilitator, curriculum planner, or assistant in early learning centers. The course also helps in qualifying for NGO or Anganwadi roles.",
-  },
-];
-
+    {
+      question: "What is the Certificate in ECCE program?",
+      answer:
+        "The Certificate in ECCE is a professional course designed to train individuals in early childhood education, focusing on the development and care of children aged 0–8 years.",
+    },
+    {
+      question: "Who can enroll in the ECCE course?",
+      answer:
+        "Anyone who has completed 10+2 or holds a graduation degree can enroll. It's ideal for aspiring preschool teachers, fresh graduates, and those switching careers.",
+    },
+    {
+      question: "What topics are covered in this course?",
+      answer:
+        "The course covers child development, play-based learning, classroom setup, child assessment, teaching aids, and inclusive education practices based on NEP 2020.",
+    },
+    {
+      question: "Is the ECCE course available in flexible formats?",
+      answer:
+        "Yes, the ECCE course is offered in Online, Offline, and Blended learning modes to suit different learning preferences and schedules.",
+    },
+    {
+      question: "Will I get a certificate after completing the course?",
+      answer:
+        "Yes, after completing all modules and practicum requirements, you will receive a Certificate in ECCE recognized by reputed institutions.",
+    },
+    {
+      question: "What are the career options after ECCE?",
+      answer:
+        "You can work as a preschool teacher, daycare facilitator, curriculum planner, or assistant in early learning centers. The course also helps in qualifying for NGO or Anganwadi roles.",
+    },
+  ];
 
   return (
     <div className=" font-family overflow-hidden">
-      <div className="bg-gray-50 text-gray-800"
-      >
+      <Helmet>
+        <title>Early Childhood Educator - Innovating Educators</title>
+        <meta
+          name="description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta name="keywords" content="projects, portfolio, work" />
+        <meta property="og:title" content="Projects | My Website" />
+        <meta
+          property="og:description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
+      <div className="bg-gray-50 text-gray-800">
         {/* 🔹 Hero Section with Background Image and Overlay Content */}
         <div className="relative w-full h-[600px] md:h-[650px]">
           {/* Background Image */}
@@ -186,20 +200,26 @@ const ECCE = () => {
           />
 
           {/* Overlay Content */}
-          <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center
-           text-white text-center px-4 py-8">
+          <div
+            className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center
+           text-white text-center px-4 py-8"
+          >
             {/* Heading + Description */}
             <div className="mb-8 max-w-2xl space-y-4">
-              <h1 className="text-2xl md:text-5xl font-extrabold leading-tight"
-              data-aos="fade-up">
+              <h1
+                className="text-2xl md:text-5xl font-extrabold leading-tight"
+                data-aos="fade-up"
+              >
                 Start Your Journey as an Early Childhood Educator
               </h1>
-              <p className="text-sm md:text-lg leading-relaxed"
-              data-aos="fade-up"
-              data-aos-delay='100'>
-                Start your journey as an Early Childhood Educator and make a
-                lasting impact on young minds. Nurture creativity, curiosity,
-                and confidence in children while building a fulfilling career.
+              <p
+                className="text-sm md:text-lg leading-relaxed"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Begin your career by earning the Certificate in ECCE and leave
+                an impression on little minds. Have the knowledge and skills to
+                nurture the children as an early childhood educator.
               </p>
             </div>
 
@@ -208,7 +228,8 @@ const ECCE = () => {
               <button
                 className="cursor-pointer px-8 py-2 bg-button hover:bg-pink-700 transition 
         rounded-lg text-white text-sm md:text-base shadow-xl"
-        data-aos="zoom-in" data-aos-delay="200"
+                data-aos="zoom-in"
+                data-aos-delay="200"
               >
                 Enroll Now
               </button>
@@ -221,37 +242,51 @@ const ECCE = () => {
 
       <div className="px-4 md:px-10 py-12">
         <div className="text-center space-y-6 max-w-4xl mx-auto">
-          <h1 className="font-bold text-2xl md:text-3xl"
-          data-aos='fade-up'>Course Overview</h1>
+          <h1 className="font-bold text-2xl md:text-3xl" data-aos="fade-up">
+            Course Overview
+          </h1>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
-          data-aos='fade-left'>
-            The Certificate in ECCE is designed to equip aspiring educators with
-            the knowledge and skills needed to support the holistic development
-            of children aged 0–6 years. This program focuses on key areas such
-            as child psychology, early learning principles, classroom
-            management, and child health and nutrition. Through a blend of
-            theoretical and practical training, learners gain the confidence to
-            create engaging, age-appropriate learning experiences.
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-left"
+          >
+            This Certificate in ECCE is designed to suit those students who love
+            early childhood education. This is an extensive program that
+            provides you with the necessary set of tools in favor of the
+            comprehensive development of children of early ages, 0 to 6 years.
+            The major areas that you will explore include child psychology,
+            early learning theories, learning techniques in classrooms, and
+            interests in child health and nutrition.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
-           data-aos='fade-right'>
-            Whether you're beginning your teaching journey or enhancing your
-            existing skills, this course opens the door to meaningful careers in
-            preschools, daycare centers, and early learning programs. With
-            flexible learning modes and expert guidance, the Certificate in ECCE
-            prepares you to become a caring, responsible, and effective early
-            childhood educator.
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-right"
+          >
+            A fine combination of theoretical learning and practical experience
+            will help train you to implement theme based learning, improve fine
+            & gross motor developmental and life skills in young children. This
+            Certificate in ECCE can either let you enter the field as a fresher
+            or can lead to a promotion of the current position and assist in
+            building a career in preschool, daycare, and early childhood
+            centers. Flexible program lengths and professional mentors will fill
+            you with confidence to go out in the world and be a trained, caring
+            and competent early childhood educator.
           </p>
         </div>
       </div>
 
       {/* ================= Course Modules ================= */}
       <div className="px-6" data-aos="fade-up">
-        <section className="bg-gradient-to-b from-secondary to-gray-200 p-8 
-        rounded-xl shadow mb-16" data-aos="fade-up">
-          <h3 className="text-2xl font-semibold text-center mb-6"  data-aos="fade-down">
+        <section
+          className="bg-gradient-to-b from-secondary to-gray-200 p-8 
+        rounded-xl shadow mb-16"
+          data-aos="fade-up"
+        >
+          <h3
+            className="text-2xl font-semibold text-center mb-6"
+            data-aos="fade-down"
+          >
             Course Modules
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -277,8 +312,11 @@ const ECCE = () => {
       </div>
 
       {/*  ================= WhatYouWillLearn ================= */}
-      <div className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row 
-      items-center gap-10" data-aos="fade-left">
+      <div
+        className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row 
+      items-center gap-10"
+        data-aos="fade-left"
+      >
         {/* Left Image */}
         <div className="relative w-full md:w-1/2 flex justify-center">
           <img
@@ -286,8 +324,10 @@ const ECCE = () => {
             alt=""
             className="absolute bottom-0 md:h-120 h-100"
           />
-          <div className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] overflow-hidden 
-           rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] rounded-bl-[5px] shadow-xl">
+          <div
+            className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] overflow-hidden 
+           rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] rounded-bl-[5px] shadow-xl"
+          >
             <img
               src={Child}
               alt="Learning Visual"
@@ -316,8 +356,7 @@ const ECCE = () => {
       </div>
 
       {/* ============== ClassDuration ============== */}
-      <div className="relative w-full h-[600px] overflow-hidden"
-     >
+      <div className="relative w-full h-[600px] overflow-hidden">
         {/* Background Image */}
         <img
           src={bgImg}
@@ -334,8 +373,10 @@ const ECCE = () => {
        text-white"
         >
           {/* Class Duration Box - Top Left */}
-          <div className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
-          data-aos='fade-left'>
+          <div
+            className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
+            data-aos="fade-left"
+          >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Class Duration
             </h2>
@@ -357,7 +398,7 @@ const ECCE = () => {
           <div
             className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md 
         self-end mt-10 md:mt-0"
-        data-aos='fade-right'
+            data-aos="fade-right"
           >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Eligibility Criteria
@@ -372,8 +413,11 @@ const ECCE = () => {
             </ul>
           </div>
           <div className="flex justify-end mt-4 md:pr-80">
-            <button className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white 
-            rounded-lg shadow-xl hover:bg-pink-600 transition" data-aos='fade-down'>
+            <button
+              className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white 
+            rounded-lg shadow-xl hover:bg-pink-600 transition"
+              data-aos="fade-down"
+            >
               Enroll Now
             </button>
           </div>
@@ -384,8 +428,7 @@ const ECCE = () => {
       <section className="bg-white px-6 py-12 md:py-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
           {/* Image Section */}
-          <div className="relative w-full md:w-1/2"
-          data-aos="zoom-in-right">
+          <div className="relative w-full md:w-1/2" data-aos="zoom-in-right">
             <img
               src={programImage}
               alt="Program Participants"
@@ -398,52 +441,81 @@ const ECCE = () => {
           {/* Text Content */}
           <div className="w-full md:w-1/2 space-y-10">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
-              Who This Program Is Made For
+              Who Can Benefit from This Course
             </h2>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-left" data-aos-delay="200">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  Future Teachers Ready to Begin:
+                  Aspiring Teachers All Set to Start:
                 </strong>{" "}
-                Step into the world of early childhood education with
-                confidence. Master essential techniques in child development,
-                playful learning, and classroom setup to begin a meaningful
-                teaching journey.
+                Start studying early childhood education on your right footing.
+                Having this Certificate in ECCE will help you know how to
+                establish warm, organized learning environments, fine & gross
+                motor skills, and how to plan age-appropriate activities
+                confidently.
               </p>
             </div>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-left" data-aos-delay="300">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-left"
+              data-aos-delay="300"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  Experienced Educators Seeking Growth:
+                  Career Teachers in need of Development:
                 </strong>{" "}
-                Upgrade your teaching approach with the latest ECCE methods,
-                innovative pedagogical tools, and NEP 2020-aligned practices.
-                Earn a recognized certification to advance your professional
-                path.
+                Already teaching? The program refreshes your knowledge through
+                NEP 2020 practices, new technologies and strong emphasis on
+                inclusive education, life skills, and child-led engagement
+                practices with a well-known Certificate in ECCE.
               </p>
             </div>
 
             {/* Bullet Item */}
-            <div className="flex items-start gap-3"
-            data-aos="fade-left" data-aos-delay="400">
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  New Career Explorers & Recent Graduates:
+                  New Generation of Career Searchers & Graduates:
                 </strong>{" "}
-                Whether you're switching careers or just starting out, this
-                program gives you hands-on training, flexible learning options,
-                and a smooth entry into preschool and early education roles.
+                Changing direction or at the beginning of the road? In
+                controlled development, you can get practical experience in
+                activity planning, early teaching pedagogy and early childhood
+                philosophy, all with a highly regarded Certificate in ECCE.
               </p>
             </div>
+{/* Bullet Item 
+            <div
+              className="flex items-start gap-3"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
+              <p className="md:text-lg text-sm">
+                <strong className="text-xl">
+                  Go Into a Valuable Profession in Early Childhood Education:
+                </strong>{" "}
+                Early childhood education is more than teaching--it is the work
+                of developing the emotional and intellectual foundation of
+                coming generations. The Certificate in ECCE equips you to
+                promote young learners with inclusive, joyful and carefully
+                thought teacher approaches.
+              </p>
+            </div>*/}
           </div>
         </div>
       </section>
@@ -514,24 +586,30 @@ const ECCE = () => {
       </div>
 
       {/* ================= Assessment & Certification ================= */}
-      <section className="py-10 px-4 "
-      data-aos="fade-up">
-        <div className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5"
-        data-aos="fade-up"
+      <section className="py-10 px-4 " data-aos="fade-up">
+        <div
+          className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5"
+          data-aos="fade-up"
           data-aos-delay="100"
-          data-aos-duration="800">
+          data-aos-duration="800"
+        >
           <h2 className="text-3xl font-bold mb-6 text-gray-800">
             Assessment and Certification
           </h2>
 
-          <div className="bg-white rounded-lg shadow p-6 space-y-4 text-left"
-          data-aos="fade-up"
+          <div
+            className="bg-white rounded-lg shadow p-6 space-y-4 text-left"
+            data-aos="fade-up"
             data-aos-delay="200"
-            data-aos-duration="800">
+            data-aos-duration="800"
+          >
             {assessments.map((item, index) => (
-              <div key={index} className="flex items-start gap-3"
-              data-aos="fade-right"
-                data-aos-delay={`${300 + index * 100}`}>
+              <div
+                key={index}
+                className="flex items-start gap-3"
+                data-aos="fade-right"
+                data-aos-delay={`${300 + index * 100}`}
+              >
                 <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
                 <p className="text-gray-700">
                   <strong>{item.title}</strong> {item.content}
@@ -546,9 +624,9 @@ const ECCE = () => {
       <div
         className="bg-white py-10 px-6 lg:px-20 flex flex-col lg:flex-row items-center 
                 justify-center gap-10 "
-                data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="100"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="100"
       >
         {/* Left Content */}
         <div className="max-w-4xl">
@@ -584,8 +662,7 @@ const ECCE = () => {
       </div>
 
       {/* ================= Frequently Asked Questions ================= */}
-      <div className="bg-gray-50 mb-2"
-      data-aos="fade-up">
+      <div className="bg-gray-50 mb-2" data-aos="fade-up">
         <div className="max-w-4xl mx-auto px-4 py-10 ">
           <h2 className="text-3xl font-bold mb-8 text-center">
             FAQs – Certification in Teaching Skills

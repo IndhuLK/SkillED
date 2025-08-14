@@ -3,6 +3,7 @@ import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { BsHourglass } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Helmet } from "react-helmet";
 
 const ContactUs = () => {
   useEffect(() => {
@@ -10,7 +11,23 @@ const ContactUs = () => {
   }, []);
 
   return (
-    <div className="bg-white px-4 sm:px-6 md:px-10 py-10 max-w-[100vw] overflow-x-hidden">
+    <div className="overflow-x-hidden font-family">
+      <Helmet>
+              <title>Contact SKillED - Innovating Educators</title>
+              <meta
+                name="description"
+                content="Explore our recent projects and case studies."
+              />
+              <meta name="keywords" content="projects, portfolio, work" />
+              <meta property="og:title" content="Projects | My Website" />
+              <meta
+                property="og:description"
+                content="Explore our recent projects and case studies."
+              />
+              <meta property="og:type" content="website" />
+            </Helmet>
+   
+    <div className="bg-white px-4 sm:px-6 md:px-10 py-10 max-w-[100vw] ">
       <h2
         className="text-2xl sm:text-3xl font-bold text-center mb-10"
         data-aos="fade-down"
@@ -96,17 +113,22 @@ const ContactUs = () => {
       </div>
 
       {/* Google Map Section */}
-      <div className="w-full h-64 sm:h-80 md:h-[400px] overflow-hidden rounded-lg" data-aos="zoom-in">
-        <iframe
-          title="Google Map"
-          className="w-full h-full border-0"
-          loading="lazy"
-          allowFullScreen
-          referrerPolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.123456789!2d80.27071871524092!3d13.08268079077924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e123456789%3A0x7ab9ac2e4e7bb1e!2sChennai%20Main%20Office!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
-        ></iframe>
-      </div>
+      <div
+  className="w-full h-64 sm:h-80 md:h-[400px] overflow-hidden rounded-lg"
+  data-aos="zoom-in"
+>
+  <iframe
+    title="Madurai Map"
+    className="w-full h-full border-0"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890!2d78.1198!3d9.9252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00bfa9f1b9865d%3A0x123456789abcdef!2sMadurai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v0000000000000!5m2!1sen!2sin"
+  ></iframe>
+</div>
+
     </div>
+     </div>
   );
 };
 

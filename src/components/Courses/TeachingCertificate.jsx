@@ -9,14 +9,15 @@ import Vector5 from "../../assets/Vector5.png";
 import bgImg from "../../assets/bgImg.jpg";
 import programImage from "../../assets/ProgramImage.jpg";
 import girlImage from "../../assets/Professiongirl.png";
+import { Helmet } from "react-helmet";
 
 const learningPoints = [
-  "Understand the basic principles of effective teaching and learning.",
-  "Plan and deliver structured, engaging lessons.",
-  "Manage classrooms with confidence and positive discipline strategies.",
-  "Build professional confidence as a new or returning educator.",
-  "Communicate effectively with students and colleagues.",
-  "Identify different learning styles and adapt your teaching accordingly.",
+  "Being able to come to know about the basic principles of teaching and using them in reality classrooms.",
+  "Prepare and present effective interactivity lesson plans with an aim to achieve the objective based on various pedagogy.",
+  "Learn classroom management skills that will enable you to bring about a productive positive learning environment.",
+  "Use contemporary methods of teaching that encourage engagement and critical thinking amongst the students.",
+  "Improve the communication skills of your teacher so he/she communicates powerfully with students, parents and others.",
+  "Be aware of the various learning needs and employ adaptable teaching strategies in serving all students.",
 ];
 
 const CTSModules = [
@@ -131,155 +132,206 @@ const assessments = [
 
 const TeachingCertificate = () => {
   useEffect(() => {
-      AOS.init({ duration: 1000 });
-    }, []);
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const [openIndex, setOpenIndex] = useState(null);
-  
-    const toggle = (index) => {
-      setOpenIndex(openIndex === index ? null : index);
-    };
+
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
 
   const faqData = [
-  {
-    question: "What is the Certification in Teaching Skills?",
-    answer:
-      "It’s a short-term professional program designed to equip aspiring and in-service teachers with essential teaching methods, classroom strategies, and soft skills needed to succeed in educational settings.",
-  },
-  {
-    question: "Who can apply for this course?",
-    answer:
-      "Anyone who has completed 10+2 or holds a graduation degree can apply. It's ideal for aspiring teachers, NGO educators, career changers, and fresh graduates.",
-  },
-  {
-    question: "What does the course cover?",
-    answer:
-      "The course includes modules on modern pedagogy, classroom management, child development, learning styles, and digital teaching tools to prepare educators for dynamic classrooms.",
-  },
-  {
-    question: "Is this course available online?",
-    answer:
-      "Yes, the Certification in Teaching Skills is available in Online, Offline, and Blended formats, allowing flexible learning based on your convenience.",
-  },
-  {
-    question: "Will I receive a recognized certificate?",
-    answer:
-      "Yes, upon successful completion, you’ll receive a certificate accredited by reputed educational boards and recognized by institutions nationally and internationally.",
-  },
-  {
-    question: "Are there any job opportunities after this course?",
-    answer:
-      "Yes, learners can pursue opportunities in schools, learning centers, NGOs, and online teaching platforms. Internship and placement support is also available.",
-  },
-];
-
+    {
+      question: "What is the Certification in Teaching Skills?",
+      answer:
+        "It’s a short-term professional program designed to equip aspiring and in-service teachers with essential teaching methods, classroom strategies, and soft skills needed to succeed in educational settings.",
+    },
+    {
+      question: "Who can apply for this course?",
+      answer:
+        "Anyone who has completed 10+2 or holds a graduation degree can apply. It's ideal for aspiring teachers, NGO educators, career changers, and fresh graduates.",
+    },
+    {
+      question: "What does the course cover?",
+      answer:
+        "The course includes modules on modern pedagogy, classroom management, child development, learning styles, and digital teaching tools to prepare educators for dynamic classrooms.",
+    },
+    {
+      question: "Is this course available online?",
+      answer:
+        "Yes, the Certification in Teaching Skills is available in Online, Offline, and Blended formats, allowing flexible learning based on your convenience.",
+    },
+    {
+      question: "Will I receive a recognized certificate?",
+      answer:
+        "Yes, upon successful completion, you’ll receive a certificate accredited by reputed educational boards and recognized by institutions nationally and internationally.",
+    },
+    {
+      question: "Are there any job opportunities after this course?",
+      answer:
+        "Yes, learners can pursue opportunities in schools, learning centers, NGOs, and online teaching platforms. Internship and placement support is also available.",
+    },
+  ];
 
   return (
     <div className=" font-family overflow-hidden">
-     <div className="bg-gray-50 text-gray-800">
-  {/* 🔹 Hero Section with Background Image and Overlay Content */}
-  <div className="relative w-full h-[600px] md:h-[650px]">
-    {/* Background Image */}
-    <img
-      src={Teaching} // Replace with your image import
-      alt="Diploma in Teaching Skills"
-      className="absolute inset-0 w-full h-full object-cover object-top"
-    />
+      <Helmet>
+        <title>Certification in Teaching Skills - Innovating Educators</title>
+        <meta
+          name="description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta name="keywords" content="projects, portfolio, work" />
+        <meta property="og:title" content="Projects | My Website" />
+        <meta
+          property="og:description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
 
-    {/* Overlay Content */}
-    <div className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center 
-    text-white text-center px-4 py-8" >
-      {/* Heading + Description */}
-      <div className="mb-8 max-w-2xl space-y-4">
-        <h1 className="text-2xl md:text-5xl font-extrabold leading-tight"
-        data-aos="zoom-in"
-              data-aos-delay="100">
-          Certification in Teaching Skills (CTS)
-        </h1>
-        <p className="text-sm md:text-lg leading-relaxed" 
-        data-aos="zoom-in"
-              data-aos-delay="200">
-          A dynamic short-term program for aspiring and in-service
-          teachers to enhance practical classroom teaching and
-          communication skills.
-        </p>
-      </div>
+      <div className="bg-gray-50 text-gray-800">
+        {/* 🔹 Hero Section with Background Image and Overlay Content */}
+        <div className="relative w-full h-[600px] md:h-[650px]">
+          {/* Background Image */}
+          <img
+            src={Teaching} // Replace with your image import
+            alt="Diploma in Teaching Skills"
+            className="absolute inset-0 w-full h-full object-cover object-top"
+          />
 
-      {/* 🔹 Course Info Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-5xl px-2 
-      md:px-4 mb-6" data-aos="fade-up"
-              data-aos-delay="300">
-        {[
-          { icon: "📅", title: "Duration", desc: "1–3 Months" },
-          { icon: "🎓", title: "Eligibility", desc: "10, +2 / Any Graduate" },
-          { icon: "🖥️", title: "Mode", desc: "Online / Offline / Blended" },
-          {
-            icon: "👥",
-            title: "Ideal For",
-            desc: "Aspiring teachers, NGOs, aides",
-          },
-        ].map((item, idx) => (
+          {/* Overlay Content */}
           <div
-            key={idx}
-            className="bg-white bg-opacity-90 shadow p-4 rounded text-gray-800"
+            className="absolute inset-0 bg-black/50 flex flex-col justify-center items-center 
+    text-white text-center px-4 py-8"
           >
-            <h3 className="font-bold text-base md:text-lg text-green-600 flex 
-            items-center justify-center gap-2">
-              <span>{item.icon}</span> {item.title}
-            </h3>
-            <p className="text-sm md:text-base mt-1">{item.desc}</p>
+            {/* Heading + Description */}
+            <div className="mb-8 max-w-2xl space-y-4">
+              <h1
+                className="text-2xl md:text-5xl font-extrabold leading-tight"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+              >
+                Certification in Teaching Skills (CTS)
+              </h1>
+              <p
+                className="text-sm md:text-lg leading-relaxed"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
+                Powermap Your Way using Real-World Teaching Strategies and
+                Communication Resources An evolving short course certification
+                of the skills of teaching that suits both the would-be and the
+                practicing teachers. Learn how to actively engage the classroom
+                in real-time, deliver effective lessons and adopt contemporary
+                teaching methods that matter.
+              </p>
+            </div>
+
+            {/* 🔹 Course Info Boxes */}
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-5xl px-2 
+      md:px-4 mb-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              {[
+                { icon: "📅", title: "Duration", desc: "1–3 Months" },
+                {
+                  icon: "🎓",
+                  title: "Eligibility",
+                  desc: "10, +2 / Any Graduate",
+                },
+                {
+                  icon: "🖥️",
+                  title: "Mode",
+                  desc: "Online / Offline / Blended",
+                },
+                {
+                  icon: "👥",
+                  title: "Ideal For",
+                  desc: "Aspiring teachers, NGOs, aides",
+                },
+              ].map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white bg-opacity-90 shadow p-4 rounded text-gray-800"
+                >
+                  <h3
+                    className="font-bold text-base md:text-lg text-green-600 flex 
+            items-center justify-center gap-2"
+                  >
+                    <span>{item.icon}</span> {item.title}
+                  </h3>
+                  <p className="text-sm md:text-base mt-1">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            {/* 🔹 Centered Enroll Button */}
+            <div className="flex justify-center">
+              <button
+                className="cursor-pointer px-8 py-2 bg-pink-600 hover:bg-pink-700 transition 
+        rounded-full text-white text-sm md:text-base"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              >
+                Enroll Now
+              </button>
+            </div>
           </div>
-        ))}
+        </div>
       </div>
-
-      {/* 🔹 Centered Enroll Button */}
-      <div className="flex justify-center">
-        <button className="cursor-pointer px-8 py-2 bg-pink-600 hover:bg-pink-700 transition 
-        rounded-full text-white text-sm md:text-base" data-aos='fade-up'
-        data-aos-delay="250">
-          Enroll Now
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
 
       {/*Course Module */}
 
       <div className="px-4 md:px-10 py-12">
         <div className="text-center space-y-6 max-w-4xl mx-auto">
-          <h1 className="font-bold text-2xl md:text-3xl"
-          data-aos="fade-up">Course Overview</h1>
+          <h1 className="font-bold text-2xl md:text-3xl" data-aos="fade-up">
+            Course Overview
+          </h1>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
-          data-aos="fade-right"
-            data-aos-delay="200">
-            The Certificate in Teaching Skills is a foundational program
-            designed to equip aspiring and current educators with essential
-            teaching techniques and classroom strategies. This short-term{" "}
-            <span className="font-semibold text-black">course</span> focuses on
-            practical knowledge that prepares learners to confidently manage a
-            classroom, design engaging lessons, and support student learning
-            effectively.
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            Certification in teaching skills is an entry level teacher training
+            program which aims to further your teaching skills by combining
+            theoretical and practical learning. The program provides you with
+            effective teaching approaches, management strategies in the
+            classroom setting, and new digital technologies necessary to deliver
+            a successful education.
           </p>
 
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg"
-          data-aos="fade-left"
-            data-aos-delay="300">
-            Whether you're stepping into the teaching profession or looking to
-            strengthen your existing skills, this program provides the tools and
-            understanding needed to deliver meaningful learning experiences
-            across different educational settings.
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
+            This certification is ideal whether you are just starting out your
+            teaching career, or you are looking to take your teaching style to
+            the next level, providing you with the foundational skills necessary
+            to develop an exciting learning environment and have students
+            succeed. Constructed to be in line with the international teaching
+            standards, the CTS program will leave you well ready to teach in any
+            form of classroom whether locally or globally.
           </p>
         </div>
       </div>
 
       {/* ================= Course Modules ================= */}
       <div className="px-6">
-        <section className="bg-gradient-to-b from-secondary to-gray-200 p-8 rounded-xl 
-        shadow mb-16" data-aos="fade-up">
-          <h3 className="text-2xl font-semibold text-center mb-6"  data-aos="fade-down">
+        <section
+          className="bg-gradient-to-b from-secondary to-gray-200 p-8 rounded-xl 
+        shadow mb-16"
+          data-aos="fade-up"
+        >
+          <h3
+            className="text-2xl font-semibold text-center mb-6"
+            data-aos="fade-down"
+          >
             Course Modules
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -305,8 +357,11 @@ const TeachingCertificate = () => {
       </div>
 
       {/*  ================= WhatYouWillLearn ================= */}
-      <div className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row 
-      items-center gap-10" data-aos="fade-up">
+      <div
+        className="bg-white py-10 px-6 md:px-20 lg:px-32 flex flex-col md:flex-row 
+      items-center gap-10"
+        data-aos="fade-up"
+      >
         {/* Left Image */}
         <div className="relative w-full md:w-1/2 flex justify-center">
           <img
@@ -314,8 +369,10 @@ const TeachingCertificate = () => {
             alt=""
             className="absolute bottom-0 md:h-120 h-100"
           />
-          <div className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] 
-          overflow-hidden  rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] rounded-bl-[5px] shadow-xl">
+          <div
+            className="relative w-[300px] h-[340px] md:w-[380px] md:h-[420px] 
+          overflow-hidden  rounded-tr-[180px] rounded-br-[180px] rounded-tl-[5px] rounded-bl-[5px] shadow-xl"
+          >
             <img
               src={learnImage}
               alt="Learning Visual"
@@ -330,7 +387,7 @@ const TeachingCertificate = () => {
             What You Will Learn
           </h2>
 
-          <ul className="space-y-4">
+          <ul className="space-y-2">
             {learningPoints.map((point, index) => (
               <li key={index} className="flex items-start gap-3">
                 <CheckCircle className="text-green-500 w-5 h-5 mt-1" />
@@ -361,8 +418,10 @@ const TeachingCertificate = () => {
        text-white"
         >
           {/* Class Duration Box - Top Left */}
-          <div className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
-          data-aos='fade-left'>
+          <div
+            className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md"
+            data-aos="fade-left"
+          >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Class Duration
             </h2>
@@ -383,7 +442,8 @@ const TeachingCertificate = () => {
 
           <div
             className="max-w-md bg-white/20 backdrop-blur-md p-6 rounded-lg shadow-md 
-        self-end mt-10 md:mt-0 " data-aos='fade-right'
+        self-end mt-10 md:mt-0 "
+            data-aos="fade-right"
           >
             <h2 className="text-xl md:text-2xl font-bold mb-3">
               Eligibility Criteria
@@ -398,8 +458,11 @@ const TeachingCertificate = () => {
             </ul>
           </div>
           <div className="flex justify-end mt-4 md:pr-80">
-            <button className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white 
-            rounded-lg shadow-xl hover:bg-pink-600 transition" data-aos='fade-down'>
+            <button
+              className="cursor-pointer mt-4 px-5 py-2 bg-pink-500 text-white 
+            rounded-lg shadow-xl hover:bg-pink-600 transition"
+              data-aos="fade-down"
+            >
               Enroll Now
             </button>
           </div>
@@ -421,21 +484,30 @@ const TeachingCertificate = () => {
           </div>
 
           {/* Text Content */}
-          <div className="w-full md:w-1/2 space-y-10">
+          <div className="w-full md:w-1/2 space-y-4">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
               Who This Program Is Made For
             </h2>
+            <p className="">
+              New educators on the block Filipino educators have been one of the
+              foundations of education in the country since time immemorial, and
+              as of late, these same Filipino educators are considered future
+              teachers who are ready to start.
+            </p>
+            
 
             {/* Bullet Item */}
             <div className="flex items-start gap-3">
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  Future Teachers Ready to Begin:
+                  Mature Talented Teachers In Search of Advancement:
                 </strong>{" "}
-                Step into the world of teaching with confidence. Master
-                essential instructional techniques and effective classroom
-                management to kick-start a rewarding teaching journey.
+                Already teaching? Enhance your skills through current methods of
+                imparting lessons, engaging and managing students in the
+                classroom. This becomes a great aspect of addition to your
+                portfolio as this certification in these teaching skills
+                provides you with a great credential.
               </p>
             </div>
 
@@ -444,11 +516,12 @@ const TeachingCertificate = () => {
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  Experienced Educators Seeking Growth:
+                  New Career Seekers & Fresh graduates:
                 </strong>{" "}
-                Strengthen your existing teaching skills with updated
-                methodologies, innovative pedagogical tools, and earn a
-                recognized certification to move ahead in your teaching career.
+                Consider making your career in education? The teacher training
+                course is flexible, practical and the concepts can be applied to
+                real life situations amongst the reasons why it is a fruitful
+                experience to you during the transition.
               </p>
             </div>
 
@@ -457,11 +530,12 @@ const TeachingCertificate = () => {
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
                 <strong className="text-xl">
-                  New Career Explorers & Recent Graduates:
+                  Enter a rewarding education career:
                 </strong>{" "}
-                Switching fields or just graduated? This program provides
-                practical training, flexible learning, and a smooth entry into
-                the education sector.
+                You are not simply learning with the certification in teaching
+                skills-you are changing. This course will make you shine, no
+                matter whether you are stepping into the classroom the first
+                time or going in to brush up your already existing skills.
               </p>
             </div>
           </div>
@@ -534,20 +608,25 @@ const TeachingCertificate = () => {
       </div>
 
       {/* ================= Assessment & Certification ================= */}
-      <section className="py-10 px-4 "  data-aos="fade-up">
-        <div className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5 shadow"
-        data-aos="fade-up"
+      <section className="py-10 px-4 " data-aos="fade-up">
+        <div
+          className="max-w-3xl mx-auto text-center bg-gray-50 px-10 py-5 shadow"
+          data-aos="fade-up"
           data-aos-delay="100"
-          data-aos-duration="800">
+          data-aos-duration="800"
+        >
           <h2 className="text-3xl font-bold mb-6 text-gray-800">
             Assessment and Certification
           </h2>
 
           <div className="bg-white rounded-lg shadow-xl p-6 space-y-4 text-left">
             {assessments.map((item, index) => (
-              <div key={index} className="flex items-start gap-3"
-              data-aos="fade-right"
-                data-aos-delay={`${300 + index * 100}`}>
+              <div
+                key={index}
+                className="flex items-start gap-3"
+                data-aos="fade-right"
+                data-aos-delay={`${300 + index * 100}`}
+              >
                 <CheckCircle className="text-green-600 w-5 h-5 mt-1" />
                 <p className="text-gray-700">
                   <strong>{item.title}</strong> {item.content}
@@ -561,9 +640,10 @@ const TeachingCertificate = () => {
       {/* ================= Turn Your Passion for Teaching Into a Profession ================= */}
       <div
         className="bg-white py-10 px-6 lg:px-20 flex flex-col lg:flex-row items-center 
-                justify-center gap-10 " data-aos="fade-right"
-          data-aos-duration="1000"
-          data-aos-delay="100"
+                justify-center gap-10 "
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-delay="100"
       >
         {/* Left Content */}
         <div className="max-w-4xl">
@@ -580,8 +660,10 @@ const TeachingCertificate = () => {
             futures through professional training. With SkillEd, you're not just
             learning — you're preparing to inspire the next generation.
           </p>
-          <button className="bg-button hover:bg-pink-700 text-white px-6 py-2 rounded-md 
-          cursor-pointer shadow-xl">
+          <button
+            className="bg-button hover:bg-pink-700 text-white px-6 py-2 rounded-md 
+          cursor-pointer shadow-xl"
+          >
             Enroll Now
           </button>
         </div>
@@ -597,26 +679,31 @@ const TeachingCertificate = () => {
       </div>
 
       {/* ================= Frequently Asked Questions ================= */}
-<div className="bg-gray-50 mb-2">
-      <div className="max-w-4xl mx-auto px-4 py-10 ">
-      <h2 className="text-3xl font-bold mb-8 text-center">FAQs – Certification in Teaching Skills</h2>
-      {faqData.map((faq, index) => (
-        <div key={index} className="border rounded mb-4 bg-white shadow">
-          <button
-            onClick={() => toggle(index)}
-            className="w-full text-left px-4 py-3 flex justify-between items-center"
-          >
-            <span className="font-medium md:text-xl text-md">{faq.question}</span>
-            <span>{openIndex === index ? "▲" : "▼"}</span>
-          </button>
-          {openIndex === index && (
-            <div className="px-4 pb-4 text-gray-600 md:text-lg text-md">{faq.answer}</div>
-          )}
+      <div className="bg-gray-50 mb-2">
+        <div className="max-w-4xl mx-auto px-4 py-10 ">
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            FAQs – Certification in Teaching Skills
+          </h2>
+          {faqData.map((faq, index) => (
+            <div key={index} className="border rounded mb-4 bg-white shadow">
+              <button
+                onClick={() => toggle(index)}
+                className="w-full text-left px-4 py-3 flex justify-between items-center"
+              >
+                <span className="font-medium md:text-xl text-md">
+                  {faq.question}
+                </span>
+                <span>{openIndex === index ? "▲" : "▼"}</span>
+              </button>
+              {openIndex === index && (
+                <div className="px-4 pb-4 text-gray-600 md:text-lg text-md">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
-      
-    </div>
-    </div>
+      </div>
     </div>
   );
 };

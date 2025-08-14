@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 import EDU from "../../assets/EDU.jpg";
 
 const EducationTitle = () => {
-   useEffect(() => {
-      AOS.init({ duration: 1000 });
-    }, []);
-  
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="relative w-full font-family">
       {/* ✅ Background Image */}
@@ -30,7 +30,8 @@ const EducationTitle = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            Empowering Educators. Transforming <br /> Classrooms
+            Explore more about our courses – SkillEd <br />Teacher Training and
+            Professional <br />Skills Institute
           </h1>
 
           <p
@@ -38,9 +39,9 @@ const EducationTitle = () => {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            At Skill Ed, we specialize in developing confident, future-ready
-            educators through globally relevant teaching <br />
-            programs and personal development courses.
+            At SkillEd, we are making confident future ready educators by
+            building world class teaching programs and <br />personal development
+            training into transformative practitioners.
           </p>
 
           <button

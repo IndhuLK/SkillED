@@ -4,7 +4,7 @@ import classroomImage from "../../assets/Classroom.jpg";
 import girlImage from "../../assets/GirlImage.jpg";
 
 const About = () => {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
 
@@ -70,21 +70,25 @@ const About = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          SkillEd is a modern teacher training and professional skills institute
-          offering globally aligned certification programs in teaching
-          methodologies, early childhood education, and communication
-          development.
+          SkillEd is a contemporary teacher-training and professional skills
+          institute excelling in providing internationally recognized education
+          on contemporary teaching methodologies, early childhood education and
+          communication development. You may need a Diploma in Teaching Skills
+          or a more focused Certificate in ECCE, either way our programs will
+          provide you with the skills you need to teach with confidence in the
+          contemporary classrooms that challenge you today.
         </p>
         <p
           className="text-gray-600 mb-6 leading-relaxed text-md md:text-lg"
           data-aos="fade-up"
           data-aos-delay="300"
         >
-          Our flexible online, hybrid, and in-person learning modes make
-          education accessible for aspiring educators, working professionals,
-          and career changers. With expertly crafted curricula,
-          industry-relevant modules, and dedicated mentorship, we help learners
-          turn passion into purpose.
+          Aspiring educators, working professionals and career changers can
+          upskill without compromising their schedules due to our learning forms
+          of online, hybrid, and in-person. Hands-on projects, teacher training
+          graduates were supported by having their career monitor, an
+          industry-ready curriculum, and live projects to work on. We give you a
+          pathway of learning that is current, relevant, and transformative.
         </p>
         <button
           className="bg-button text-white px-4 py-2 rounded hover:bg-pink-600 

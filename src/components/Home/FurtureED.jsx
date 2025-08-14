@@ -13,31 +13,31 @@ import Ev3 from "../../assets/Ev3.jpg";
 
 const pointsLeft = [
   {
-    title: "Accredited for Impactful Educator Development",
-    desc: "Recognized by top institutions, SKIILED stands for quality and credibility in educator development.",
+    title: "Impactful Educator Development-Accredited",
+    desc: "The major educational institutions acknowledge the involvement of SkillED in the trusted educator training. Our qualifications such as the graduate diploma in teaching give solid bases to the success of teachers on local and international fronts.",
   },
   {
-    title: "Empowering Teachers, Everywhere",
-    desc: "SKIILED bridges global best practices with the needs of Indian educators.",
+    title: "Enlightening Educators, All Around",
+    desc: "SkillED addresses the pedagog into the classroom practices and international best practices through certificate program in ECCE course Trichy and advanced training in classroom leadership. We support educators in their development wherever and whenever and assist them in learning easy information.",
   },
   {
-    title: "Globally Aligned Certifications You Can Trust",
-    desc: "SKIILED empowers you with recognized certifications designed for real classroom impact.",
+    title: "World-Wide Endorsed Certification Which You Can Rely On",
+    desc: "Our courses, among which is the diploma in teaching, are benchmarked world over to make a difference in the world. With SkillED the credentials you receive speak the language of current classrooms and future education systems.",
   },
 ];
 
 const pointsRight = [
   {
-    title: "From Learning to Employment",
-    desc: "SKIILED supports your teaching journey from training to placement, both locally and globally.",
+    title: "Around Learning to Employmen",
+    desc: "SkillED does not only help with certification. Our sustained mentorship and job-placement support take educators out of the classroom and into their first workplace--and onto the next one--and this makes us a leader in trusted educator preparation.",
   },
   {
-    title: "Your Success Starts with Our Experts",
-    desc: "Led by seasoned educators, SKIILED offers training that's insightful, practical, and growth-focused.",
+    title: "The Success of Yours Begins with Our Masters",
+    desc: "Our training curriculum is a synthesis of both theoretically and practically oriented methods under the supervision of expert trainers. No matter what degree you choose to work toward--the diploma in teaching or one of the special tracks in teaching--you will be taught by people who have created classrooms of their own.",
   },
   {
     title: "Proven Impact. Real Results.",
-    desc: "Over 25,000 teachers trust SKIILED to build successful, impactful careers in education.",
+    desc: "Over 25000 teachers have furthered their career paths with SkillED. Our alumni network, coupled with reliable educator training means that each teacher is graduate equipped, confident, and ready to work.",
   },
 ];
 
@@ -77,26 +77,31 @@ const FurtureED = () => {
     <section className="py-16 px-4 bg-white font-family">
       <div className="container mx-auto text-center" data-aos="fade-up">
         <h1 className="text-xl sm:text-3xl font-bold text-gray-800 mb-2">
-          Build a Future in Education with SkillED
+          Empower your teaching with Skilled & shape the future
         </h1>
         <p className="text-gray-600 text-lg">
-          SkillED offers future-ready teacher training programs designed to
-          equip aspiring and working educators with the skills they need to
-          succeed. With flexible course options and industry-recognized
-          certifications, we help you take the first step—or the next big leap—
-          in your teaching career.
+          SkillED provides credible educator training to both the budding and
+          established teachers. Our programs (including the diploma in teaching,
+          graduate diploma in teaching and the certificate in ECCE course
+          Trichy) are structured to offer you maximum flexibility with
+          sector-recognized credentials that will allow you to lead confidently
+          in contemporary classrooms. Regardless of whether you are new or
+          upskilling, SkillED equips you to flourish in a world that requires
+          ever changing educational needs.
         </p>
       </div>
 
       {/* Main Section */}
       <div className="max-w-7xl mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
         {/* Left Points */}
-        <div className="space-y-10" data-aos="fade-right">
+        <div className="space-y-5" data-aos="fade-right">
           {pointsLeft.map((item, index) => (
             <div key={index} className="flex items-start gap-3">
               <ForwardOutlinedIcon className="text-green-500 mt-1 rotate-270" />
               <div>
-                <h4 className="font-semibold text-md md:text-xl mb-2">{item.title}</h4>
+                <h4 className="font-semibold text-md md:text-xl mb-2">
+                  {item.title}
+                </h4>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             </div>
@@ -105,16 +110,22 @@ const FurtureED = () => {
 
         {/* Center Image */}
         <div className="flex justify-center" data-aos="zoom-in">
-          <img src={furture} alt="Graduates" className="rounded-md w-[280px] md:w-[400px]" />
+          <img
+            src={furture}
+            alt="Graduates"
+            className="rounded-md w-[280px] md:w-[400px]"
+          />
         </div>
 
         {/* Right Points */}
-        <div className="space-y-13" data-aos="fade-left">
+        <div className="space-y-5" data-aos="fade-left">
           {pointsRight.map((item, index) => (
             <div key={index} className="flex items-start gap-3">
               <ForwardOutlinedIcon className="text-green-500 mt-1 rotate-270" />
               <div>
-                <h4 className="font-semibold text-md md:text-xl mb-2">{item.title}</h4>
+                <h4 className="font-semibold text-md md:text-xl mb-2">
+                  {item.title}
+                </h4>
                 <p className="text-gray-600 text-sm">{item.desc}</p>
               </div>
             </div>
@@ -127,10 +138,16 @@ const FurtureED = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 items-start">
           {/* Left Text Section */}
           <div className="md:col-span-1">
-            <h2 className="text-xl sm:text-3xl font-bold text-gray-800 mb-2">Upcoming Events</h2>
+            <h2 className="text-xl sm:text-3xl font-bold text-gray-800 mb-2">
+              Skilled Course -Stay Updated. Stay Inspired.
+            </h2>
             <p className="text-gray-600 text-lg">
-              Stay informed about SKIILED's latest <br />
-              workshops, webinars, and training programs.
+              Do not fail to come to SkillED workshops, trainings, and webinars
+              that will assist in continuous improvement. Whether you are
+              looking to update your knowledge on early childhood education, or
+              stay up to date on changes in trends in inclusive education, our
+              events will enable you to stay up to date on the latest in
+              teaching and empower life-long learning.
             </p>
           </div>
 
@@ -143,13 +160,24 @@ const FurtureED = () => {
                 data-aos="fade-up"
                 data-aos-delay={event.id * 100}
               >
-                <img src={event.img} alt={event.title} className="w-full h-40 object-cover" />
+                <img
+                  src={event.img}
+                  alt={event.title}
+                  className="w-full h-40 object-cover"
+                />
                 <div className="p-4 space-y-1">
                   <h3 className="font-semibold text-md">{event.title}</h3>
                   <p className="text-xs text-gray-700 flex items-center gap-1">
-                    <EventOutlinedIcon fontSize="small" className="text-red-800" />
+                    <EventOutlinedIcon
+                      fontSize="small"
+                      className="text-red-800"
+                    />
                     {event.date} |{" "}
-                    <AccessTimeOutlinedIcon fontSize="small" className="text-red-800" /> {event.time}
+                    <AccessTimeOutlinedIcon
+                      fontSize="small"
+                      className="text-red-800"
+                    />{" "}
+                    {event.time}
                   </p>
                   <p className="text-xs text-gray-500">{event.mode}</p>
                 </div>

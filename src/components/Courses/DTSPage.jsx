@@ -5,6 +5,7 @@ import { CheckCircle } from "lucide-react";
 import DP from "../../assets/Dp.jpg";
 import programImage from "../../assets/ProgramImage.jpg";
 import girlImage from "../../assets/Professiongirl.png";
+import { Helmet } from "react-helmet";
 
 const courseModules = [
   {
@@ -113,12 +114,36 @@ const DTSPage = () => {
   }, []);
 
   const topics = [
-    "Child Psychology & Pedagogy",
-    "Modern Teaching Methodologies",
-    "Classroom Management Skills",
-    "Lesson Planning & Curriculum Design",
-    "Assessment & Evaluation Techniques",
-    "Effective Communication & Presentation",
+    {
+      title: "Pedagogy / Child Psychology",
+      description:
+        "Appreciate cognitive, emotional, and social growth of children to create age-appropriate learning experiences—one of the fundamentals of classroom and teacher preparation.",
+    },
+    {
+      title: "Contemporary Pedagogy",
+      description:
+        "Learn modern teaching methods and strategies that enhance retention and encourage learning, harmonizing traditional and modern instructional tools.",
+    },
+    {
+      title: "Skills in Classroom Management",
+      description:
+        "Establish measures for a positive, productive, and inclusive classroom climate—ensuring smooth day-to-day teaching.",
+    },
+    {
+      title: "Lesson Planning / Curriculum Design",
+      description:
+        "Discover how to create detailed lesson plans and flexible curriculum structures aligned with learning outcomes and standards.",
+    },
+    {
+      title: "Evaluation & Methods",
+      description:
+        "Develop skills to design equitable, diverse, and empowering assessment tools that measure student knowledge and foster continuous growth.",
+    },
+    {
+      title: "Effective Communication / Presentation",
+      description:
+        "Improve verbal and non-verbal communication skills to deliver engaging lessons and interact confidently with students, parents, and colleagues.",
+    },
   ];
 
   const [openIndex, setOpenIndex] = useState(null);
@@ -157,6 +182,20 @@ const DTSPage = () => {
 
   return (
     <div className="font-family overflow-hidden">
+      <Helmet>
+        <title>Diploma in Teaching Skills - Innovating Educators</title>
+        <meta
+          name="description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta name="keywords" content="projects, portfolio, work" />
+        <meta property="og:title" content="Projects | My Website" />
+        <meta
+          property="og:description"
+          content="Explore our recent projects and case studies."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* ================= Hero Section ================= */}
       <div className="relative w-full font-family">
         {/* ✅ Background Image */}
@@ -168,18 +207,15 @@ const DTSPage = () => {
 
         {/* ✅ Overlay Content */}
         <div className="absolute inset-0 bg-black/40 flex items-center">
-          <div
-            className="px-4 md:px-20 text-white max-w-6xl mx-auto w-full"
-            
-          >
+          <div className="px-4 md:px-20 text-white max-w-6xl mx-auto w-full">
             {/* Heading */}
             <h1
               className="text-2xl md:text-4xl font-bold leading-tight mb-4 text-center"
               data-aos="zoom-in"
               data-aos-delay="100"
             >
-              Diploma in Teaching Skills – Build a Strong Foundation for a
-              Lifelong Teaching Career
+              Diploma in Teaching Skills – Develop a Good Foundation toward a
+              Lifelong Career as a Teacher
             </h1>
 
             {/* Flex Info Row */}
@@ -207,8 +243,11 @@ const DTSPage = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              <button className="shadow-xl cursor-pointer bg-button hover:bg-pink-700 
-              text-white px-6 py-2 rounded-md" data-aos='fade-down'>
+              <button
+                className="shadow-xl cursor-pointer bg-button hover:bg-pink-700 
+              text-white px-6 py-2 rounded-md"
+                data-aos="fade-down"
+              >
                 Enroll Now
               </button>
             </div>
@@ -219,32 +258,45 @@ const DTSPage = () => {
       {/* ================= Overview Section ================= */}
       <div className="max-w-6xl mx-auto px-4 py-12 flex flex-col lg:flex-row items-center justify-between gap-8 bg-white">
         {/* Left - Text Section */}
-        <div className="lg:w-1/2 space-y-5" >
-          <h2 className="text-3xl font-semibold mb-4" data-aos="fade-top">Course Overview</h2>
-          <p className="text-gray-700 leading-relaxed text-sm md:text-lg" data-aos="fade-right">
-            The Diploma in Teaching Skills is a comprehensive training program
-            designed to equip educators with practical teaching methodologies,
-            effective classroom strategies, and a deep understanding of
-            student-centered learning. Whether you’re beginning your teaching
-            journey or seeking to upgrade your skills, this course covers
-            essential areas such as lesson planning, classroom management,
-            instructional techniques, assessment methods, and the use of digital
-            tools in education. The program is aligned with global teaching
-            standards and prepares participants to confidently teach in diverse
-            educational settings, both locally and internationally.
+        <div className="lg:w-1/2 space-y-5">
+          <h2 className="text-3xl font-semibold mb-4" data-aos="fade-top">
+            Course Overview
+          </h2>
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-right"
+          >
+            The Diploma in Teaching Skills is an organized, hands-on,
+            career-oriented course in teacher training that aims at candidates
+            who desire to leave a permanent mark in the education sector. This
+            course is generated due to real-life requirements in classrooms and
+            its training program enables instructors to learn the core and most
+            relevant teaching skills which include preparation of lesson plans,
+            classroom management, child psychology, and current teaching
+            techniques. Whether you are new to the field or you just want to
+            build upon your skills, the curricula will take you to the next
+            level due to flexible modules and digital learning materials.
           </p>
-          <div
-              className="flex justify-center"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <button
-                className="cursor-pointer px-8 py-2 bg-pink-600 hover:bg-pink-700 transition 
+          <p
+            className="text-gray-700 leading-relaxed text-sm md:text-lg"
+            data-aos="fade-right"
+          >
+            This teacher training program is in line with the international
+            practices and the program equips the teaching participants to work
+            in a variety of teaching settings- infant teaching to secondary
+            teaching. Designed to be both theory based and practical, the
+            Diploma in Teaching Skills will ensure you are prepared to enter the
+            classroom as an independent and student-focused educator ready to
+            face any classroom in the modern-day education system.
+          </p>
+          <div className="flex " data-aos="fade-up" data-aos-delay="400">
+            <button
+              className="cursor-pointer px-8 py-2 bg-pink-600 hover:bg-pink-700 transition 
           rounded-lg text-white text-sm md:text-base"
-              >
-                Enroll Now
-              </button>
-            </div>
+            >
+              Enroll Now
+            </button>
+          </div>
         </div>
 
         {/* Right - Image Section */}
@@ -301,6 +353,12 @@ const DTSPage = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800">
             What You Will Learn
           </h2>
+          <p className="text-xl sm:text-lg text-center text-gray-800 mt-2">
+            The study modules that have been well selected in the Diploma in
+            Teaching Skills study course to meet the demands of contemporary
+            classrooms and to provide a practical/skilled based teacher training
+            that would reflect in instant classroom achievement.
+          </p>
         </div>
 
         {/* Grid Section */}
@@ -313,9 +371,9 @@ const DTSPage = () => {
             <div
               key={index}
               className="relative bg-white border border-gray-200 rounded-xl 
-              shadow-md p-6 transition-all duration-300 hover:shadow-lg"
+        shadow-md p-6 transition-all duration-300 hover:shadow-lg"
               data-aos="zoom-in"
-              data-aos-delay={index * 100} // Slight delay for each item
+              data-aos-delay={index * 100}
             >
               {/* Number Badge */}
               <div className="absolute -top-3 -left-3 bg-gradient-to-tr from-primary to-button text-white w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold shadow-lg">
@@ -327,11 +385,10 @@ const DTSPage = () => {
                 <CheckCircle className="text-green-500 w-6 h-6 mt-1 shrink-0" />
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800 mb-1 hover:text-secondary">
-                    {item}
+                    {item.title}
                   </h3>
                   <p className="text-sm text-gray-600 leading-relaxed">
-                    Gain practical and theoretical skills to excel in modern
-                    classrooms.
+                    {item.description}
                   </p>
                 </div>
               </div>
@@ -358,7 +415,7 @@ const DTSPage = () => {
           </div>
 
           {/* Text Content */}
-          <div className="w-full md:w-1/2 space-y-10" data-aos="fade-left">
+          <div className="w-full md:w-1/2 space-y-5" data-aos="fade-left">
             <h2 className="text-2xl md:text-3xl font-semibold text-gray-900">
               Who This Program Is Made For
             </h2>
@@ -371,9 +428,12 @@ const DTSPage = () => {
             >
               <CheckCircle className="text-green-500 mt-1 w-10 h-6" />
               <p className="md:text-lg text-sm">
-                <strong className="text-xl">Aspiring Educators:</strong> Begin
-                your teaching career with confidence by building strong
-                instructional strategies and classroom management techniques.
+                <strong className="text-xl">Aspiring Educators:</strong> Whether
+                you are new in education, doing this diploma in teaching skills
+                program will provide you with the basic teacher training. You
+                will learn all that including instructional design to behavior
+                management so you can walk into your very first class
+                confidently.
               </p>
             </div>
 
@@ -388,9 +448,11 @@ const DTSPage = () => {
                 <strong className="text-xl">
                   In-Service Teachers & Facilitators:
                 </strong>{" "}
-                Enhance your existing teaching methods, learn the latest
-                pedagogical tools, and gain a recognized diploma to advance your
-                career.
+                In the profession already? This course will modernize your
+                teaching strategy with the inclusion of new strategies,
+                technology and international norms. Advanced teacher training
+                will provide you with the boost of confidence and certified
+                advantage in your career.
               </p>
             </div>
 
@@ -405,9 +467,10 @@ const DTSPage = () => {
                 <strong className="text-xl">
                   Career Shifters & Fresh Graduates:
                 </strong>{" "}
-                Looking to enter the education field? This program offers a
-                smooth transition with practical training and flexible learning
-                modules.
+                Consider becoming a switcher or a post-graduation in the
+                teaching profession? This teaching skills diploma will help fill
+                the gap between experience and structured learning. It is fluid
+                and applied and designed to accelerate you, into education.
               </p>
             </div>
           </div>
