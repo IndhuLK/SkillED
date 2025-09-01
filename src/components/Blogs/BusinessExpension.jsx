@@ -6,9 +6,9 @@ import blogImage from "../../assets/blog.jpg"; // blog post image
 
 const BusinessExpension = () => {
   return (
-    <div className="font-family px-10">
+    <div className="font-family">
       {/* Hero Section */}
-      <div className="relative md:w-full h-64 md:h-80">
+      <div className="relative md:w-full h-64 md:h-180">
         <img
           src={blogHero}
           alt="Blog Hero"
